@@ -1,0 +1,4014 @@
+[
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$Gdht4K8u51AxFJ46kOY9hm$z3yKxEwY7gacyU9bOEsqNgAYsYpOIcQGU/+Tf35zXrI=",
+    "last_login": null,
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "Admin",
+    "last_name": "TechNova",
+    "email": "admin@technova.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-11-03T06:22:55.777Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$5vFLi5kwhVjV3bw8V3kCHM$52NoQc2WKITCU4fTS9gqs6p8pfy7CBUkCQuV4iBhcWU=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "member",
+    "first_name": "สมชาย",
+    "last_name": "ใจดี",
+    "email": "member@demo.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-11-03T06:22:56.132Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$rYEJ7nQ3WAG9zAOihnHilZ$7/9qh0slovdoY8T7ENRvyKZI75V7yaPJKknl+hLzrHY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "Rudy",
+    "first_name": "",
+    "last_name": "",
+    "email": "nutbotluvpotato@gmail.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-11-03T07:42:27.027Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "api.userprofile",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "admin"
+    ],
+    "is_email_verified": true,
+    "otp_code": null,
+    "otp_created_at": null,
+    "role": "admin",
+    "phone": "0811112222",
+    "address": "สำนักงานใหญ่ TechNova กรุงเทพฯ",
+    "created_at": "2026-11-03T06:22:56.123Z"
+  }
+},
+{
+  "model": "api.userprofile",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "member"
+    ],
+    "is_email_verified": true,
+    "otp_code": null,
+    "otp_created_at": null,
+    "role": "member",
+    "phone": "0899998888",
+    "address": "55/9 ถนนสุขุมวิท เขตวัฒนา กรุงเทพฯ 10110",
+    "created_at": "2026-11-03T06:22:56.459Z"
+  }
+},
+{
+  "model": "api.userprofile",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "Rudy"
+    ],
+    "is_email_verified": true,
+    "otp_code": null,
+    "otp_created_at": "2026-11-03T07:42:27.499Z",
+    "role": "member",
+    "phone": "0955584167",
+    "address": "",
+    "created_at": "2026-11-03T07:42:27.494Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 7,
+  "fields": {
+    "name": "ซีพียู (CPU)",
+    "description": "หน่วยประมวลผลรุ่นล่าสุด Intel Core Ultra และ AMD Ryzen 9000 / 7000 Series",
+    "created_at": "2026-11-03T06:43:05.559Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 8,
+  "fields": {
+    "name": "การ์ดจอ (GPU)",
+    "description": "กราฟิกการ์ดระดับเทพ NVIDIA GeForce RTX 40 Series และ AMD Radeon RX 7000 Series",
+    "created_at": "2026-11-03T06:43:05.567Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 9,
+  "fields": {
+    "name": "เมนบอร์ด (Motherboard)",
+    "description": "เมนบอร์ดชิปเซ็ตล่าสุด Intel Z890 / Z790 และ AMD X870E / B650",
+    "created_at": "2026-11-03T06:43:05.571Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 10,
+  "fields": {
+    "name": "แรม (RAM DDR5)",
+    "description": "หน่วยความจำความเร็วสูง DDR5 Bus 6000 - 8000MHz พร้อมไฟ RGB",
+    "created_at": "2026-11-03T06:43:05.574Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 11,
+  "fields": {
+    "name": "พาวเวอร์ซัพพลาย (PSU)",
+    "description": "พาวเวอร์ซัพพลายมาตรฐาน ATX 3.0 และ PCIe 5.0 คุณภาพระดับ Gold/Platinum",
+    "created_at": "2026-11-03T06:43:05.579Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 12,
+  "fields": {
+    "name": "จอมอนิเตอร์เกมมิ่ง (Monitor)",
+    "description": "หน้าจอเกมมิ่งเทคโนโลยี OLED, Fast IPS, Mini-LED รีเฟรชเรทสูงสุด 360Hz - 540Hz",
+    "created_at": "2026-11-03T06:43:05.582Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 13,
+  "fields": {
+    "name": "เอสเอสดี (SSD M.2 NVMe)",
+    "description": "หน่วยจัดเก็บข้อมูลความเร็วสูง PCIe Gen4 และ Gen5 ทะลุ 12,000 MB/s",
+    "created_at": "2026-11-03T06:43:05.586Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 14,
+  "fields": {
+    "name": "เคสและชุดน้ำระบายความร้อน",
+    "description": "เคสกระจกพาโนรามาและชุดระบายความร้อนด้วยน้ำ AIO 360mm พร้อมจอ LCD",
+    "created_at": "2026-11-03T06:43:05.589Z"
+  }
+},
+{
+  "model": "api.category",
+  "pk": 15,
+  "fields": {
+    "name": "เกมมิ่งเกียร์และอุปกรณ์เสริม",
+    "description": "หูฟัง คีย์บอร์ด เมาส์ ไมโครโฟนสตรีมมิ่ง",
+    "created_at": "2026-11-03T06:45:49.307Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 10,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 7 9800X3D",
+    "brand": "AMD",
+    "description": "สุดยอดซีพียูเกมมิ่งที่แรงที่สุดในโลกด้วย 2nd Gen 3D V-Cache สถาปัตยกรรม Zen 5",
+    "price": "19900.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "8C / 16T",
+      "Base/Boost": "4.7 / 5.2 GHz",
+      "L3 Cache": "96MB 3D V-Cache",
+      "TDP": "120W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.572Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 11,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 9 9950X",
+    "brand": "AMD",
+    "description": "ซีพียูเรือธง Zen 5 ประสิทธิภาพระดับสูงสุดสำหรับงานเรนเดอร์ ตัดต่อ 3D และครีเอเตอร์",
+    "price": "26900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "16C / 32T",
+      "Base/Boost": "4.3 / 5.7 GHz",
+      "L3 Cache": "64MB",
+      "TDP": "170W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.587Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 12,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 9 9900X",
+    "brand": "AMD",
+    "description": "ขุมพลัง 12 Cores 24 Threads สถาปัตยกรรม Zen 5 ประหยัดพลังงาน ประสิทธิภาพสูง",
+    "price": "18900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "12C / 24T",
+      "Base/Boost": "4.4 / 5.6 GHz",
+      "L3 Cache": "64MB",
+      "TDP": "120W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.590Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 13,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 7 9700X",
+    "brand": "AMD",
+    "description": "ซีพียู 8 Cores 16 Threads กินไฟเพียง 65W ให้ความเร็วและประสิทธิภาพยอดเยี่ยม",
+    "price": "14900.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "8C / 16T",
+      "Base/Boost": "3.8 / 5.5 GHz",
+      "L3 Cache": "32MB",
+      "TDP": "65W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.592Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 14,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 5 9600X",
+    "brand": "AMD",
+    "description": "ซีพียูสายคุ้มค่า 6 Cores 12 Threads เหมาะสำหรับการประกอบคอมเล่นเกมระดับ Full HD - 2K",
+    "price": "10900.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "6C / 12T",
+      "Base/Boost": "3.9 / 5.4 GHz",
+      "L3 Cache": "32MB",
+      "TDP": "65W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.595Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 15,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 7 7800X3D",
+    "brand": "AMD",
+    "description": "ซีพียูเกมมิ่งยอดนิยมขวัญใจเกมเมอร์ทั่วโลก เฟรมเรทนิ่ง เสถียรในทุกเกมระดับ AAA",
+    "price": "17500.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "8C / 16T",
+      "Base/Boost": "4.2 / 5.0 GHz",
+      "L3 Cache": "96MB 3D V-Cache",
+      "TDP": "120W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.597Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 16,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 9 7950X3D",
+    "brand": "AMD",
+    "description": "รวมพลัง 16 Cores พร้อมเทคโนโลยี 3D V-Cache รองรับทั้งงานหนักระดับสตูดิโอและการเล่นเกม",
+    "price": "24900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores/Threads": "16C / 32T",
+      "Base/Boost": "4.2 / 5.7 GHz",
+      "L3 Cache": "128MB",
+      "TDP": "120W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.600Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 17,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core Ultra 9 285K",
+    "brand": "Intel",
+    "description": "ชิปประมวลผลเรือธงยุคใหม่ Arrow Lake บนซ็อกเก็ต LGA1851 มาพร้อม NPU เร่งความเร็วงาน AI",
+    "price": "24900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Cores/Threads": "24C (8P+16E) / 24T",
+      "Max Clock": "5.7 GHz",
+      "NPU": "Intel AI Boost",
+      "TDP": "125W/250W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.603Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 18,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core Ultra 7 265K",
+    "brand": "Intel",
+    "description": "ชิป Core Ultra 7 เจนใหม่ สำหรับเกมมิ่งและมัลติทาสก์ระดับโปร อุณหภูมิเย็นลง ประหยัดไฟขึ้น",
+    "price": "16900.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Cores/Threads": "20C (8P+12E) / 20T",
+      "Max Clock": "5.5 GHz",
+      "NPU": "Intel AI Boost",
+      "TDP": "125W/250W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.606Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 19,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core Ultra 5 245K",
+    "brand": "Intel",
+    "description": "ตัวเลือกสุดคุ้มสำหรับเกมเมอร์ยุค AI สถาปัตยกรรมใหม่ รองรับ DDR5 เต็มรูปแบบ",
+    "price": "12500.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Cores/Threads": "14C (6P+8E) / 14T",
+      "Max Clock": "5.2 GHz",
+      "NPU": "Intel AI Boost",
+      "TDP": "125W/159W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.608Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 20,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i9-14900KS",
+    "brand": "Intel",
+    "description": "Special Edition ความเร็วแตะ 6.2 GHz ซีพียูตัวแรงที่สุดของแพลตฟอร์ม LGA1700",
+    "price": "27900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores/Threads": "24C (8P+16E) / 32T",
+      "Max Clock": "6.2 GHz",
+      "Cache": "36MB SmartCache",
+      "TDP": "150W/253W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.611Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 21,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i9-14900K",
+    "brand": "Intel",
+    "description": "ซีพียูเรือธง 24 คอร์ 32 เธรด ความเร็วสูงสุด 6.0 GHz ปลดล็อกการโอเวอร์คล็อก",
+    "price": "22500.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores/Threads": "24C (8P+16E) / 32T",
+      "Max Clock": "6.0 GHz",
+      "Cache": "36MB",
+      "TDP": "125W/253W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.613Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 22,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i7-14700K",
+    "brand": "Intel",
+    "description": "เพิ่ม E-Cores รวม 20 คอร์ 28 เธรด แรงใกล้เคียง i9 ในราคาเข้าถึงง่ายกว่า",
+    "price": "16200.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores/Threads": "20C (8P+12E) / 28T",
+      "Max Clock": "5.6 GHz",
+      "Cache": "33MB",
+      "TDP": "125W/253W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.615Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 23,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i5-14600K",
+    "brand": "Intel",
+    "description": "ซีพียูยอดนิยมสำหรับคอมประกอบสายเกมมิ่ง สตรีม และทำงานทั่วไปได้อย่างลื่นไหล",
+    "price": "11900.00",
+    "stock": 22,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores/Threads": "14C (6P+8E) / 20T",
+      "Max Clock": "5.3 GHz",
+      "Cache": "24MB",
+      "TDP": "125W/181W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.618Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 24,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i5-14400F",
+    "brand": "Intel",
+    "description": "ซีพียู 10 คอร์ 16 เธรด ราคาประหยัด คุ้มค่าที่สุดสำหรับการเล่นเกมที่ 1080p และ 1440p",
+    "price": "7490.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores/Threads": "10C (6P+4E) / 16T",
+      "Max Clock": "4.7 GHz",
+      "Cache": "20MB",
+      "TDP": "65W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.622Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 25,
+  "fields": {
+    "category": 8,
+    "name": "ASUS ROG Strix GeForce RTX 4090 OC 24GB",
+    "brand": "ASUS",
+    "description": "การ์ดจอรุ่นท็อปสูงสุด ดีไซน์ Die-cast Metal พร้อมพัดลม Axial-tech ระบายความร้อนดีเยี่ยม",
+    "price": "81900.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Memory": "24GB GDDR6X 384-bit",
+      "Boost Clock": "2640 MHz",
+      "Outputs": "2x HDMI 2.1a, 3x DP 1.4a",
+      "Power": "16-pin 12VHPWR (850W+)"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.624Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 26,
+  "fields": {
+    "category": 8,
+    "name": "MSI GeForce RTX 4090 SUPRIM X 24GB",
+    "brand": "MSI",
+    "description": "การ์ดจอหรูหราอะลูมิเนียมขัดลาย TRI-FROZR 3S และ Vapor Chamber ดึงความเย็นขั้นสุด",
+    "price": "79900.00",
+    "stock": 4,
+    "image_url": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "24GB GDDR6X",
+      "Boost Clock": "2625 MHz",
+      "Cooling": "TRI-FROZR 3S Vapor Chamber",
+      "Power": "1000W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.627Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 27,
+  "fields": {
+    "category": 8,
+    "name": "Gigabyte AORUS GeForce RTX 4090 Master 24GB",
+    "brand": "Gigabyte",
+    "description": "มาพร้อมหน้าจอ LCD Edge View แสดงอุณหภูมิแบบเรียลไทม์ และระบบระบายความร้อน WINDFORCE",
+    "price": "76900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "24GB GDDR6X",
+      "Boost Clock": "2550 MHz",
+      "Screen": "LCD Edge View",
+      "Power": "1000W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.629Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 28,
+  "fields": {
+    "category": 8,
+    "name": "ASUS TUF Gaming GeForce RTX 4080 Super OC 16GB",
+    "brand": "ASUS",
+    "description": "วัสดุเกรดทหาร ทนทาน พัดลมตลับลูกปืนคู่ อายุการใช้งานยาวนาน 2 เท่า",
+    "price": "42900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X 256-bit",
+      "Boost Clock": "2640 MHz",
+      "Military Grade": "TUF Chokes & Capacitors",
+      "Power": "750W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.631Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 29,
+  "fields": {
+    "category": 8,
+    "name": "MSI GeForce RTX 4080 Super Gaming X Slim 16GB",
+    "brand": "MSI",
+    "description": "ดีไซน์บางลงเพื่อติดตั้งในเคสขนาดกะทัดรัดได้ง่าย พร้อมไฟ RGB Mystic Light สวยงาม",
+    "price": "41500.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Boost Clock": "2610 MHz",
+      "Design": "Slim Tri-Frozr 3",
+      "Power": "750W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.633Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 30,
+  "fields": {
+    "category": 8,
+    "name": "GALAX GeForce RTX 4080 Super SG (1-Click OC) 16GB",
+    "brand": "GALAX",
+    "description": "การ์ดจอดีไซน์ 3 พัดลม พร้อมพัดลมเสริม 1-Clip Booster ด้านหลัง ช่วยดูดลมร้อนออกเร็วขึ้น",
+    "price": "38900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Boost Clock": "2610 MHz",
+      "Special": "1-Clip Booster 2.0 Fan",
+      "Power": "750W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.637Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 31,
+  "fields": {
+    "category": 8,
+    "name": "ASUS ROG Strix GeForce RTX 4070 Ti Super 16GB",
+    "brand": "ASUS",
+    "description": "ดีไซน์ ROG ล้ำสมัย สเปกแรงระดับ 16GB เล่นได้ทุกเกมที่ความละเอียด 4K",
+    "price": "37900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X 256-bit",
+      "Boost Clock": "2670 MHz",
+      "Outputs": "2x HDMI 2.1a, 3x DP 1.4a",
+      "Power": "750W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.639Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 32,
+  "fields": {
+    "category": 8,
+    "name": "Gigabyte GeForce RTX 4070 Ti Super Gaming OC 16GB",
+    "brand": "Gigabyte",
+    "description": "พัดลม 3 ตัวหมุนสลับทิศทางลดแรงต้านอากาศ ฮีตไปป์ทองแดงสัมผัสหน้าชิปโดยตรง",
+    "price": "33900.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Boost Clock": "2655 MHz",
+      "Cooling": "WINDFORCE 3X",
+      "Warranty": "4 Years (Register)"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.642Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 33,
+  "fields": {
+    "category": 8,
+    "name": "ZOTAC Gaming GeForce RTX 4070 Ti Super Trinity 16GB",
+    "brand": "ZOTAC",
+    "description": "ดีไซน์โค้งมนตามหลักอากาศพลศาสตร์ IceStorm 2.0 พร้อมระบบไฟ SPECTRA 2.0 RGB",
+    "price": "31900.00",
+    "stock": 11,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Boost Clock": "2610 MHz",
+      "Cooling": "IceStorm 2.0",
+      "Power": "700W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.644Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 34,
+  "fields": {
+    "category": 8,
+    "name": "ASUS Dual GeForce RTX 4070 Super 12GB",
+    "brand": "ASUS",
+    "description": "การ์ดจอ 2 พัดลมขนาดพอเหมาะ รองรับเคสมาตรฐานทั่วไป ประสิทธิภาพคุ้มค่าสูงสุดในซีรีส์ 70",
+    "price": "23900.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "12GB GDDR6X 192-bit",
+      "Boost Clock": "2505 MHz",
+      "Fans": "Axial-tech 0dB Technology",
+      "Power": "650W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.646Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 35,
+  "fields": {
+    "category": 8,
+    "name": "MSI GeForce RTX 4070 Super Ventus 2X White 12GB",
+    "brand": "MSI",
+    "description": "การ์ดจอโทนสีขาวล้วน เหมาะกับชุดคอมประกอบสไตล์มินิมอลและเคสสีขาว",
+    "price": "24500.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "12GB GDDR6X",
+      "Boost Clock": "2520 MHz",
+      "Color": "Pure White Edition",
+      "Power": "650W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.648Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 36,
+  "fields": {
+    "category": 8,
+    "name": "Gigabyte GeForce RTX 4060 Ti Eagle OC 8GB",
+    "brand": "Gigabyte",
+    "description": "กราฟิกการ์ดสายเกมมิ่งระดับ 1080p - 1440p รองรับ DLSS 3 Frame Generation",
+    "price": "14900.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "8GB GDDR6 128-bit",
+      "Boost Clock": "2550 MHz",
+      "Cooling": "WINDFORCE 3X",
+      "Power": "500W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.651Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 37,
+  "fields": {
+    "category": 8,
+    "name": "ASUS Dual GeForce RTX 4060 OC 8GB",
+    "brand": "ASUS",
+    "description": "การ์ดจอยอดนิยมสำหรับการเริ่มต้นเล่นเกมทุกเกมในปัจจุบัน กินไฟต่ำเพียง 115W",
+    "price": "11500.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "8GB GDDR6",
+      "Boost Clock": "2535 MHz",
+      "TDP": "115W",
+      "Power": "550W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.654Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 38,
+  "fields": {
+    "category": 8,
+    "name": "Sapphire Nitro+ AMD Radeon RX 7900 XTX Vapor-X 24GB",
+    "brand": "Sapphire",
+    "description": "การ์ดจอตัวท็อปจากฝั่งสีแดง แรมจุใจ 24GB พร้อม Vapor Chamber และกรอบแมกนีเซียม",
+    "price": "41900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "24GB GDDR6 384-bit",
+      "Boost Clock": "2680 MHz",
+      "Architecture": "AMD RDNA 3",
+      "Power": "800W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.656Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 39,
+  "fields": {
+    "category": 8,
+    "name": "PowerColor Red Devil Radeon RX 7900 XTX 24GB",
+    "brand": "PowerColor",
+    "description": "ดีไซน์ Red Devil ดุดัน ฮีตซิงก์หนา 3.5 สล็อต ไฟ RGB ส่องสว่างรอบตัว",
+    "price": "39900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "24GB GDDR6",
+      "Boost Clock": "2565 MHz",
+      "Cooling": "Triple Ring-fan",
+      "Power": "900W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.659Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 40,
+  "fields": {
+    "category": 8,
+    "name": "Sapphire Pulse AMD Radeon RX 7800 XT 16GB",
+    "brand": "Sapphire",
+    "description": "การ์ดจอระดับ 1440p สุดคุ้มค่า แรม 16GB กว้างขวาง เล่นเกมเปิด Ray Tracing สบาย",
+    "price": "19900.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6 256-bit",
+      "Boost Clock": "2430 MHz",
+      "Architecture": "AMD RDNA 3",
+      "Power": "700W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.662Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 41,
+  "fields": {
+    "category": 8,
+    "name": "ASUS TUF Gaming Radeon RX 7700 XT 12GB",
+    "brand": "ASUS",
+    "description": "แข็งแกร่ง ทนทาน ระบบระบายความร้อน TUF Axial-tech 3 พัดลม",
+    "price": "17200.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "12GB GDDR6 192-bit",
+      "Boost Clock": "2599 MHz",
+      "TUF Protection": "Auto-Extreme Technology",
+      "Power": "700W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.665Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 42,
+  "fields": {
+    "category": 8,
+    "name": "PowerColor Fighter Radeon RX 7600 XT 16GB",
+    "brand": "PowerColor",
+    "description": "การ์ดจอแรม 16GB ในราคาหมื่นต้นๆ เหมาะกับงานตัดต่อวิดีโอและเล่นเกม 1080p Ultra",
+    "price": "12900.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6 128-bit",
+      "Boost Clock": "2755 MHz",
+      "Architecture": "AMD RDNA 3",
+      "Power": "600W Recommended"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.668Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 43,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Maximus Z890 Hero",
+    "brand": "ASUS",
+    "description": "เมนบอร์ดไฮเอนด์สำหรับ Intel Core Ultra ซ็อกเก็ต LGA1851 ภาคจ่ายไฟ 20+1+2+2 เฟส รองรับ Wi-Fi 7",
+    "price": "26900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "RAM": "4x DDR5 Up to 8800+ MT/s",
+      "PCIe": "PCIe 5.0 x16",
+      "Network": "Wi-Fi 7 + 2.5G/5G LAN"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.671Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 44,
+  "fields": {
+    "category": 9,
+    "name": "MSI MEG Z890 ACE",
+    "brand": "MSI",
+    "description": "เมนบอร์ดระดับพรีเมียมสีดำทอง ภาคจ่ายไฟ 24+2+1+1 เฟส พอร์ต Thunderbolt 4 คู่",
+    "price": "24900.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Thunderbolt": "Dual Thunderbolt 4",
+      "Storage": "5x M.2 (1x PCIe 5.0)",
+      "Audio": "Audio Boost 5 HD"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.673Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 45,
+  "fields": {
+    "category": 9,
+    "name": "Gigabyte Z890 AORUS Master",
+    "brand": "Gigabyte",
+    "description": "การออกแบบ VRM แข็งแกร่ง ฮีตซิงก์ M.2 Thermal Guard XL ถอดใส่อุปกรณ์ง่ายด้วย EZ-Latch Click",
+    "price": "21900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "VRM": "18+1+2 Phases",
+      "Network": "Wi-Fi 7 + 10GbE LAN",
+      "EZ-Latch": "Tool-less M.2 & PCIe"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.675Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 46,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Strix Z890-E Gaming WiFi",
+    "brand": "ASUS",
+    "description": "เมนบอร์ดเกมมิ่งยอดนิยม ระบบเสียง SupremeFX ALC4080 พร้อมไฟ Polymo Lighting สวยสะกดตา",
+    "price": "18900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Power": "18+1+2+2 Power Stages",
+      "Network": "Wi-Fi 7 + 5Gb LAN",
+      "Form Factor": "ATX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.677Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 47,
+  "fields": {
+    "category": 9,
+    "name": "ASUS TUF Gaming Z890-PLUS WiFi",
+    "brand": "ASUS",
+    "description": "ทนทาน เสถียร ผ่านการทดสอบระดับทหาร เหมาะกับคอมประกอบสายทำงานและเล่นเกมหนักต่อเนื่อง",
+    "price": "11900.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Power": "16+1+2+1 Stages",
+      "Network": "Wi-Fi 7 + 2.5Gb LAN",
+      "Warranty": "3 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.680Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 48,
+  "fields": {
+    "category": 9,
+    "name": "MSI MAG Z890 Tomahawk WiFi",
+    "brand": "MSI",
+    "description": "เมนบอร์ดลายทหารยอดนิยม ดีไซน์ดุดัน อุปกรณ์ครบครัน คุ้มค่าที่สุดสำหรับ Intel Ultra",
+    "price": "10900.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Power": "16+1+1+1 Duet Rail",
+      "M.2 Shield": "Frozr Toolless",
+      "Form Factor": "ATX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.682Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 49,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Crosshair X870E Hero",
+    "brand": "ASUS",
+    "description": "เมนบอร์ดระดับพรีเมียมสำหรับ AMD Ryzen 9000/7000 ซ็อกเก็ต AM5 ฟีเจอร์ AI Overclocking ครบครัน",
+    "price": "25900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870E",
+      "USB4": "Dual USB4 40Gbps Type-C",
+      "RAM": "DDR5 8200+ MT/s (OC)",
+      "Wi-Fi": "Wi-Fi 7 Ready"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.685Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 50,
+  "fields": {
+    "category": 9,
+    "name": "Gigabyte X870E AORUS Master",
+    "brand": "Gigabyte",
+    "description": "ระบบจ่ายไฟ 16+2+2 เฟส เสริมเกราะระบายความร้อนรอบบอร์ด รองรับ PCIe 5.0 เต็มความเร็วทั้ง GPU และ SSD",
+    "price": "21500.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870E",
+      "Power": "16+2+2 Digital VRM",
+      "Storage": "3x M.2 PCIe 5.0",
+      "Wi-Fi": "Wi-Fi 7 High-Gain Antenna"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.688Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 51,
+  "fields": {
+    "category": 9,
+    "name": "MSI MPG X870E Carbon WiFi",
+    "brand": "MSI",
+    "description": "ลายคาร์บอนไฟเบอร์สไตล์มอเตอร์สปอร์ต ไฟ Mystic Light RGB เชื่อมต่อ USB4 และ Wi-Fi 7 รวดเร็ว",
+    "price": "17900.00",
+    "stock": 9,
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870E",
+      "VRM": "18+2+1 Phases 110A SPS",
+      "Network": "5G LAN + Wi-Fi 7",
+      "Audio": "ALC4080 Codec"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.596Z",
+    "updated_at": "2026-11-03T07:13:16.690Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 52,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Strix X870-A Gaming WiFi",
+    "brand": "ASUS",
+    "description": "เมนบอร์ดโทนสีเงิน-ขาว Snow White สำหรับสาวกคอมประกอบสีขาวและสเปกแรง",
+    "price": "15900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870",
+      "Color": "White / Silver Metallic",
+      "Power": "16+2+2 Stages",
+      "Wi-Fi": "Wi-Fi 7"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.692Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 53,
+  "fields": {
+    "category": 9,
+    "name": "MSI MAG X870 Tomahawk WiFi",
+    "brand": "MSI",
+    "description": "บอร์ด AM5 คุณภาพระดับตำนาน เสถียรภาพสูง พอร์ตเชื่อมต่อครบ รองรับการอัปเกรดซีพียูยาวนาน",
+    "price": "11500.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870",
+      "Power": "14+2+1 Duet Rail",
+      "PCIe 5.0": "M.2 & PCIe Slot",
+      "Form Factor": "ATX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.694Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 54,
+  "fields": {
+    "category": 9,
+    "name": "ASRock X870 Steel Legend WiFi",
+    "brand": "ASRock",
+    "description": "ลวดลาย Steel Legend ทนทาน โครงสร้าง PCB 8 ชั้น เสริมทองแดง 2oz ป้องกันสัญญาณรบกวน",
+    "price": "10900.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD X870",
+      "PCB": "8-Layer 2oz Copper",
+      "Network": "Wi-Fi 7 + 2.5G LAN",
+      "Audio": "Nahimic Audio"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.696Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 55,
+  "fields": {
+    "category": 9,
+    "name": "Gigabyte B650 AORUS Elite AX V2",
+    "brand": "Gigabyte",
+    "description": "เมนบอร์ด AM5 สุดคุ้ม ภาคจ่ายไฟ 12+2+2 เฟส เสา Wi-Fi 6E ในตัว รองรับ Ryzen ทุกรุ่น",
+    "price": "7590.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD B650",
+      "Power": "12+2+2 Twin Digital VRM",
+      "Wi-Fi": "Wi-Fi 6E + 2.5GbE",
+      "Storage": "3x M.2"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.697Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 56,
+  "fields": {
+    "category": 9,
+    "name": "MSI B650M Gaming Plus WiFi",
+    "brand": "MSI",
+    "description": "เมนบอร์ดขนาด Micro-ATX อัดแน่นฟีเจอร์ เหมาะสำหรับเคสคอมขนาดกะทัดรัด คุ้มราคา",
+    "price": "5690.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD B650",
+      "Form Factor": "Micro-ATX",
+      "Wi-Fi": "Wi-Fi 6E",
+      "LAN": "2.5Gbps"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.702Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 57,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Strix Z790-F Gaming WiFi II",
+    "brand": "ASUS",
+    "description": "เมนบอร์ดชิป Z790 เจน 2 สำหรับ Intel Gen 14 และ 13 แข็งแกร่งด้วยสเปก ROG แท้",
+    "price": "14900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "Intel Z790",
+      "Power": "16+1+2 Stages",
+      "Wi-Fi": "Wi-Fi 7 Antenna",
+      "Audio": "ROG SupremeFX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.703Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 58,
+  "fields": {
+    "category": 9,
+    "name": "MSI PRO Z790-A MAX WiFi",
+    "brand": "MSI",
+    "description": "เมนบอร์ดสายโปรเฟสชันแนล ดีไซน์เรียบหรู ตอบโจทย์ทั้งการตัดต่อ สตรีม และการทำงานระดับออฟฟิศ",
+    "price": "8900.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Chipset": "Intel Z790",
+      "Wi-Fi": "Wi-Fi 7 Ready",
+      "Storage": "4x M.2 Slots",
+      "Form Factor": "ATX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.706Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 59,
+  "fields": {
+    "category": 10,
+    "name": "G.SKILL Trident Z5 Royal DDR5 64GB (32GBx2) 6400MHz Silver",
+    "brand": "G.Skill",
+    "description": "แรมระดับราชวงศ์ ดีไซน์กระจกเงาสีเงินแถบคริสตัลระยิบระยับ สวยที่สุดในตลาด",
+    "price": "11900.00",
+    "stock": 8,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "DDR5 6400 MHz",
+      "Timing": "CL32-39-39-102",
+      "RGB": "Crystalline Light Bar",
+      "Profile": "Intel XMP 3.0"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:31:29.653Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 60,
+  "fields": {
+    "category": 10,
+    "name": "G.SKILL Trident Z5 RGB DDR5 32GB (16GBx2) 7200MHz Black",
+    "brand": "G.Skill",
+    "description": "แรมความเร็วสูง 7200MHz รองรับการโอเวอร์คล็อกและการเล่นเกมระดับ Extreme",
+    "price": "6890.00",
+    "stock": 15,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 7200 MHz",
+      "Timing": "CL34-45-45-115",
+      "Heatspreader": "Matte Black Aluminum",
+      "Voltage": "1.40V"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.710Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 61,
+  "fields": {
+    "category": 10,
+    "name": "G.SKILL Trident Z5 Neo RGB DDR5 32GB (16GBx2) 6000MHz (AMD EXPO)",
+    "brand": "G.Skill",
+    "description": "แรมที่จูนมาสำหรับ AMD Ryzen ซีรีส์ 9000/7000 โดยเฉพาะ ค่าไทมิ่ง CL30 แน่นหนา",
+    "price": "4990.00",
+    "stock": 25,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL30-38-38-96 (Sweet Spot)",
+      "Profile": "AMD EXPO Certified",
+      "Voltage": "1.35V"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.714Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 62,
+  "fields": {
+    "category": 10,
+    "name": "Corsair Dominator Titanium RGB DDR5 64GB (32GBx2) 6600MHz White",
+    "brand": "Corsair",
+    "description": "งานฝีมืออะลูมิเนียมเกรดพรีเมียม ถอดเปลี่ยนแถบด้านบนได้ ไฟไฟ LED Capellix 11 ดวง",
+    "price": "12500.00",
+    "stock": 6,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "DDR5 6600 MHz",
+      "Timing": "CL32",
+      "Color": "First Edition White",
+      "Software": "Corsair iCUE"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.717Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 63,
+  "fields": {
+    "category": 10,
+    "name": "Corsair Dominator Titanium RGB DDR5 32GB (16GBx2) 7200MHz Black",
+    "brand": "Corsair",
+    "description": "แรมเรือธงตอบสนองเร็วพิเศษ คัดเกรดชิปหน่วยความจำเพื่อความเสถียรสูงสุด",
+    "price": "7990.00",
+    "stock": 10,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 7200 MHz",
+      "Timing": "CL34",
+      "Cooling": "Patented DHX Cooling",
+      "Voltage": "1.45V"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.720Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 64,
+  "fields": {
+    "category": 10,
+    "name": "Corsair Vengeance RGB DDR5 32GB (16GBx2) 6000MHz Black",
+    "brand": "Corsair",
+    "description": "แรมยอดนิยมของเกมเมอร์ ไฟ RGB Panorama 10 โซน ควบคุมปรับแต่งง่ายผ่าน iCUE",
+    "price": "4490.00",
+    "stock": 30,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL36",
+      "Lighting": "Dynamic Ten-Zone RGB",
+      "Profile": "Intel XMP & AMD EXPO"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.723Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 65,
+  "fields": {
+    "category": 10,
+    "name": "Corsair Vengeance RGB DDR5 32GB (16GBx2) 6000MHz White",
+    "brand": "Corsair",
+    "description": "แรมสีขาวล้วนระบายความร้อนอะลูมิเนียม สำหรับเครื่องแต่งสไตล์ White Theme",
+    "price": "4590.00",
+    "stock": 24,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL36",
+      "Color": "Arctic White",
+      "Warranty": "Lifetime"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.726Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 66,
+  "fields": {
+    "category": 10,
+    "name": "Kingston Fury Renegade RGB DDR5 32GB (16GBx2) 7200MHz Silver",
+    "brand": "Kingston",
+    "description": "ความเร็วพุ่งทะลุ 7200MHz พร้อมสิทธิบัตร Kingston FURY Infrared Sync Technology",
+    "price": "6990.00",
+    "stock": 12,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 7200 MHz",
+      "Timing": "CL38",
+      "Sync": "Infrared Sync RGB",
+      "Profile": "Intel XMP 3.0"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.728Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 67,
+  "fields": {
+    "category": 10,
+    "name": "Kingston Fury Beast RGB DDR5 32GB (16GBx2) 6000MHz",
+    "brand": "Kingston",
+    "description": "ฮีตซิงก์ดีไซน์ใหม่สไตล์สปอร์ต ไฟ RGB นุ่มนวล รองรับทั้ง Intel XMP และ AMD EXPO",
+    "price": "4350.00",
+    "stock": 28,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL30",
+      "Certification": "AMD EXPO & Intel XMP",
+      "Warranty": "Lifetime"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.730Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 68,
+  "fields": {
+    "category": 10,
+    "name": "TeamGroup T-Force Delta RGB DDR5 32GB (16GBx2) 6000MHz White",
+    "brand": "TeamGroup",
+    "description": "แรมดีไซน์ปีกเครื่องบินรบสเตลธ์ แถบไฟ RGB มุมกว้าง 120 องศา โดดเด่นสะดุดตา",
+    "price": "4290.00",
+    "stock": 20,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL30-36-36-76",
+      "Lighting": "120-degree Ultra-wide",
+      "Color": "White"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.732Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 69,
+  "fields": {
+    "category": 10,
+    "name": "TeamGroup T-Force Xtreem ARGB DDR5 48GB (24GBx2) 8000MHz Black",
+    "brand": "TeamGroup",
+    "description": "ความจุพิเศษนอนไบนารี 48GB บัสความเร็วระดับตำนาน 8000MHz สำหรับนักโอเวอร์คล็อก",
+    "price": "10900.00",
+    "stock": 5,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "48GB (2x24GB Non-Binary)",
+      "Speed": "DDR5 8000 MHz",
+      "Timing": "CL38",
+      "Cooling": "Forged Aluminum 2mm",
+      "Voltage": "1.45V"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.735Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 70,
+  "fields": {
+    "category": 10,
+    "name": "Kingston Fury Beast DDR5 32GB (16GBx2) 5600MHz Non-RGB",
+    "brand": "Kingston",
+    "description": "แรมมินิมอลสายเรียบหรู ไม่มีไฟ RGB โปรไฟล์บางเตี้ย ไม่ติดฮีตซิงก์พัดลมซีพียู",
+    "price": "3690.00",
+    "stock": 25,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 5600 MHz",
+      "Design": "Low-profile Heatspreader",
+      "Lighting": "Non-RGB",
+      "Warranty": "Lifetime"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.739Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 71,
+  "fields": {
+    "category": 10,
+    "name": "ADATA XPG Lancer Blade RGB DDR5 32GB (16GBx2) 6000MHz Black",
+    "brand": "ADATA",
+    "description": "แรมตัวเตี้ยพร้อมไฟ RGB กะทัดรัด เหมาะกับเคสขนาดเล็ก ITX และ MATX",
+    "price": "3990.00",
+    "stock": 22,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Timing": "CL30",
+      "Height": "33mm Low Profile",
+      "Power": "PMIC Error Correction"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.741Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 72,
+  "fields": {
+    "category": 10,
+    "name": "Crucial Pro Overclocking DDR5 32GB (16GBx2) 6000MHz",
+    "brand": "Crucial",
+    "description": "เสถียรภาพระดับชิป Micron ของแท้ รองรับ Plug and Play และ XMP/EXPO ในตัว",
+    "price": "3790.00",
+    "stock": 18,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Chip Maker": "Micron Original",
+      "Timing": "CL36",
+      "Warranty": "Lifetime"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.743Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 73,
+  "fields": {
+    "category": 11,
+    "name": "ASUS ROG Thor 1200W Platinum II",
+    "brand": "ASUS",
+    "description": "พาวเวอร์ซัพพลายระดับไฮเอนด์ หน้าจอ OLED แสดงวัตต์แบบสด พร้อมใบพัดลม Wing-blade เงียบกริบ",
+    "price": "13900.00",
+    "stock": 6,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1200W",
+      "Efficiency": "80 PLUS Platinum",
+      "Screen": "OLED Power Display",
+      "Cables": "PCIe Gen 5.0 16-pin 600W",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.745Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 74,
+  "fields": {
+    "category": 11,
+    "name": "Corsair HX1500i 1500W Platinum ATX 3.0",
+    "brand": "Corsair",
+    "description": "กำลังไฟ 1500W เต็ม สำหรับเครื่องสเปก RTX 4090 และซีพียูโอเวอร์คล็อก คอนโทรลรอบพัดลมผ่าน iCUE",
+    "price": "14500.00",
+    "stock": 4,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1500W",
+      "Efficiency": "80 PLUS Platinum",
+      "Standard": "ATX 3.0 & PCIe 5.0",
+      "Capacitors": "100% Japanese 105C",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.747Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 75,
+  "fields": {
+    "category": 11,
+    "name": "Seasonic Vertex GX-1200 1200W Gold ATX 3.0",
+    "brand": "Seasonic",
+    "description": "แบรนด์ผู้ผลิตหม้อแปลงอันดับ 1 ของโลก สายเคเบิลถักนุ่มจัดสายง่าย จ่ายไฟนิ่งที่สุด",
+    "price": "9590.00",
+    "stock": 8,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1200W",
+      "Efficiency": "80 PLUS Gold",
+      "Standard": "ATX 3.0 / 12VHPWR",
+      "Fan": "135mm FDB Fan",
+      "Warranty": "12 Years Seasonic"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.749Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 76,
+  "fields": {
+    "category": 11,
+    "name": "Corsair RM1000x SHIFT 1000W 80 PLUS Gold",
+    "brand": "Corsair",
+    "description": "นวัตกรรมช่องเสียบสายไฟด้านข้างเคส เสียบสายสะดวกขึ้น 10 เท่า มาตรฐาน ATX 3.0",
+    "price": "7290.00",
+    "stock": 14,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1000W",
+      "Efficiency": "80 PLUS Gold",
+      "Design": "Side Interface (SHIFT)",
+      "Native Cable": "PCIe 5.0 12VHPWR",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:31:29.644Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 77,
+  "fields": {
+    "category": 11,
+    "name": "ASUS TUF Gaming 1000W Gold ATX 3.0",
+    "brand": "ASUS",
+    "description": "เคลือบสารป้องกันฝุ่นและความชื้นบนแผงวงจร ทนทานระดับ TUF จ่ายไฟต่อเนื่องไม่มีสะดุด",
+    "price": "6490.00",
+    "stock": 15,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1000W",
+      "Efficiency": "80 PLUS Gold",
+      "Protection": "PCB Protective Coating",
+      "Standard": "ATX 3.0 Ready",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.756Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 78,
+  "fields": {
+    "category": 11,
+    "name": "Seasonic Focus GX-1000 1000W ATX 3.0",
+    "brand": "Seasonic",
+    "description": "ซีรีส์ Focus ยอดนิยม ขนาดกะทัดรัด 140 มม. พัดลมหยุดหมุนเมื่อโหลดต่ำ (Hybrid Silent Fan)",
+    "price": "6890.00",
+    "stock": 12,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1000W",
+      "Efficiency": "80 PLUS Gold",
+      "Size": "Compact 140mm Depth",
+      "Noise": "Hybrid Silent Control",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.758Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 79,
+  "fields": {
+    "category": 11,
+    "name": "MSI MAG A850GL PCIE5 850W Gold",
+    "brand": "MSI",
+    "description": "พาวเวอร์ 850W PCIe 5.0 หัวต่อ 12V-2x6 สีเหลือง มองเห็นชัดเจนว่าเสียบแน่นแล้วเพื่อความปลอดภัย",
+    "price": "4390.00",
+    "stock": 20,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Safety Connector": "Dual-color 16-pin",
+      "Standard": "ATX 3.0 / PCIe 5.0",
+      "Warranty": "7 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.760Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 80,
+  "fields": {
+    "category": 11,
+    "name": "Corsair RM850e 850W Gold ATX 3.0",
+    "brand": "Corsair",
+    "description": "พาวเวอร์ซัพพลาย Full Modular เสียงเงียบพิเศษ ผ่านการรับรอง Cybenetics Platinum Sound",
+    "price": "4590.00",
+    "stock": 22,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Noise Rating": "Cybenetics Platinum",
+      "Cable": "Fully Modular",
+      "Warranty": "7 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.762Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 81,
+  "fields": {
+    "category": 11,
+    "name": "Thermaltake Toughpower GF3 850W Gold PCIe 5.0",
+    "brand": "Thermaltake",
+    "description": "ออกแบบเพื่อการ์ดจอ RTX 40 Series รองรับไฟกระชากสูงถึง 200% ตามมาตรฐาน Intel",
+    "price": "4490.00",
+    "stock": 16,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Ripple Noise": "Below 30mV",
+      "Standard": "Intel ATX 3.0",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.765Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 82,
+  "fields": {
+    "category": 11,
+    "name": "ASUS TUF Gaming 850W Gold White Edition",
+    "brand": "ASUS",
+    "description": "พาวเวอร์ซัพพลายสีขาวล้วน พร้อมสายเคเบิลสีขาวและหัวต่อ PCIe 5.0 สำหรับเคสโทนสีขาว",
+    "price": "5290.00",
+    "stock": 14,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Color": "All White Edition",
+      "Standard": "ATX 3.0 / 12VHPWR",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.769Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 83,
+  "fields": {
+    "category": 11,
+    "name": "FSP Hydro G PRO 850W Gold ATX 3.0",
+    "brand": "FSP",
+    "description": "แบรนด์ผู้ผลิตระดับตำนาน เคลือบ Off-Wet ป้องกันความชื้น ฝุ่น และการเกิดสนิม",
+    "price": "4690.00",
+    "stock": 15,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Feature": "Off-Wet Conformal Coating",
+      "Eco Switch": "0dB Fan Mode",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.772Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 84,
+  "fields": {
+    "category": 11,
+    "name": "Cooler Master MWE Gold 850 V2 Full Modular",
+    "brand": "Cooler Master",
+    "description": "พาวเวอร์ซัพพลาย 850W ขวัญใจมหาชน สายแบนสีดำจัดระเบียบง่าย พัดลม HDB เงียบสนิท",
+    "price": "3890.00",
+    "stock": 20,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Modular": "Flat Black Cables",
+      "Temperature": "Operating at 50C",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.774Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 85,
+  "fields": {
+    "category": 11,
+    "name": "SilverStone DA850R Gold 850W ATX 3.0",
+    "brand": "SilverStone",
+    "description": "พาวเวอร์ซัพพลายมาตรฐาน ATX 3.0 สเปกคุ้มราคา ขนาดกะทัดรัด 140 มม. เหมาะกับทุกเคส",
+    "price": "3790.00",
+    "stock": 18,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "850W",
+      "Efficiency": "80 PLUS Gold",
+      "Standard": "PCIe 5.0 12V-2x6",
+      "Rail": "Single +12V Rail",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.776Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 86,
+  "fields": {
+    "category": 11,
+    "name": "Antec NeoECO 750W Gold Modular",
+    "brand": "Antec",
+    "description": "พาวเวอร์ซัพพลาย 750W มาตรฐาน 80 PLUS Gold คุ้มค่าสำหรับสเปกการ์ดจอ RTX 4070 / 4060",
+    "price": "3190.00",
+    "stock": 25,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "750W",
+      "Efficiency": "80 PLUS Gold",
+      "Capacitor": "Japanese Heavy-duty",
+      "Circuit": "CircuitShield Protection",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.778Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 87,
+  "fields": {
+    "category": 12,
+    "name": "ASUS ROG Swift OLED PG32UCDM 32 inch 4K 240Hz",
+    "brand": "ASUS",
+    "description": "จอเกมมิ่ง QD-OLED ความละเอียด 4K แท้ รีเฟรชเรท 240Hz ตอบสนอง 0.03ms สีสดภาพคมลึกไร้ที่ติ",
+    "price": "49900.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "31.5 inch QD-OLED",
+      "Resolution": "4K UHD (3840 x 2160)",
+      "Refresh Rate": "240Hz",
+      "Response Time": "0.03ms (GtG)",
+      "HDR": "Dolby Vision & HDR10"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.780Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 88,
+  "fields": {
+    "category": 12,
+    "name": "Samsung Odyssey OLED G9 (G95SC) 49 inch Dual QHD 240Hz",
+    "brand": "Samsung",
+    "description": "จอโค้งอัลตร้าไวด์ 49 นิ้ว สัดส่วน 32:9 จอ QD-OLED สัมผัสประสบการณ์เล่นเกมแบบเต็มตาพาโนรามา",
+    "price": "48900.00",
+    "stock": 4,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Panel": "49 inch Curved OLED (1800R)",
+      "Resolution": "Dual QHD (5120 x 1440)",
+      "Refresh Rate": "240Hz",
+      "Smart TV": "Tizen OS Built-in",
+      "Processor": "Neo Quantum Processor Pro"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.782Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 89,
+  "fields": {
+    "category": 12,
+    "name": "LG UltraGear 32GS95UE OLED Dual-Mode 4K 240Hz / FHD 480Hz",
+    "brand": "LG",
+    "description": "สุดยอดจอนวัตกรรม Dual-Mode สลับระหว่าง 4K 240Hz สำหรับเสพภาพ หรือ FHD 480Hz สำหรับเกมยิง eSports",
+    "price": "46900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "31.5 inch WOLED",
+      "Dual-Mode": "4K 240Hz / FHD 480Hz",
+      "Sound": "Pixel Sound Speakers",
+      "Response": "0.03ms",
+      "Anti-Glare": "Low Reflection Coating"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.786Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 90,
+  "fields": {
+    "category": 12,
+    "name": "Alienware 32 4K QD-OLED Gaming Monitor (AW3225QF)",
+    "brand": "Alienware",
+    "description": "จอโค้ง 1700R QD-OLED 4K 240Hz รองรับ Dolby Vision สีสันแม่นยำระดับ 99% DCI-P3",
+    "price": "42900.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "31.6 inch QD-OLED Curved 1700R",
+      "Resolution": "4K (3840 x 2160)",
+      "Refresh Rate": "240Hz",
+      "Color Accuracy": "Delta E < 2",
+      "Warranty": "3 Years OLED Burn-in"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.788Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 91,
+  "fields": {
+    "category": 12,
+    "name": "MSI MPG 321URX QD-OLED 32 inch 4K 240Hz",
+    "brand": "MSI",
+    "description": "จอ 4K QD-OLED พร้อมระบบป้องกันจอเบิร์นอิน MSI OLED Care 2.0 และระบบฮีตซิงก์ Graphene ไร้เสียงพัดลม",
+    "price": "38900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "31.5 inch QD-OLED",
+      "Resolution": "4K UHD 240Hz",
+      "Cooling": "Custom Graphene Film Heatsink",
+      "KVM": "Built-in KVM Switch",
+      "Type-C": "90W Power Delivery"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.790Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 92,
+  "fields": {
+    "category": 12,
+    "name": "LG UltraGear 27GS95QE OLED 27 inch QHD 240Hz",
+    "brand": "LG",
+    "description": "จอ OLED 27 นิ้ว ความสว่างอัปเกรดใหม่ 275 nits รีเฟรชเรท 240Hz ตอบโจทย์เกมเมอร์สาย FPS ระดับโปร",
+    "price": "26900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "26.5 inch WOLED",
+      "Resolution": "QHD (2560 x 1440)",
+      "Refresh Rate": "240Hz",
+      "Color Gamut": "DCI-P3 98.5%",
+      "Stand": "Pivot, Tilt, Height Adjustable"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.792Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 93,
+  "fields": {
+    "category": 12,
+    "name": "ASUS ROG Swift Pro PG248QP 540Hz eSports Monitor",
+    "brand": "ASUS",
+    "description": "จอเกมมิ่งที่เร็วที่สุดในโลก 540Hz แผงจอ Esports-TN (E-TN) คมชัดทุกการสะบัดเมาส์",
+    "price": "32900.00",
+    "stock": 4,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "24.1 inch Esports-TN",
+      "Refresh Rate": "540Hz (OC)",
+      "Response Time": "0.2ms",
+      "Audio": "ESS Codec Built-in",
+      "Stand": "Retractable Base"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.794Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 94,
+  "fields": {
+    "category": 12,
+    "name": "Samsung Odyssey OLED G8 (G80SD) 32 inch 4K 240Hz",
+    "brand": "Samsung",
+    "description": "จอ OLED 4K เคลือบผิวด้าน Glare-Free ตัดแสงสะท้อนยอดเยี่ยม ชิปประมวลผล NQ8 AI Gen3",
+    "price": "41900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "32 inch QD-OLED Glare-Free",
+      "Resolution": "4K (3840 x 2160)",
+      "Refresh Rate": "240Hz",
+      "Cooling": "Pulsating Heat Pipe System",
+      "Design": "Ultra-slim Metal 3.9mm"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.796Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 95,
+  "fields": {
+    "category": 12,
+    "name": "Gigabyte AORUS FO27Q3 27 inch 360Hz QD-OLED",
+    "brand": "Gigabyte",
+    "description": "จอ QD-OLED ขนาด 27 นิ้ว ความเร็วสูงทะลุ 360Hz โหมด Tactical Resolution สำหรับเกมยิง CS2 / Valorant",
+    "price": "29900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch QD-OLED 3rd Gen",
+      "Resolution": "QHD (2560 x 1440)",
+      "Refresh Rate": "360Hz",
+      "Response Time": "0.03ms",
+      "Warranty": "3-Year Burn-in Cover"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.799Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 96,
+  "fields": {
+    "category": 12,
+    "name": "BenQ ZOWIE XL2566K 24.5 inch 360Hz eSports Monitor",
+    "brand": "BenQ",
+    "description": "จอมาตรฐานการแข่งขัน eSports ทั่วโลก เทคโนโลยี DyAc+ ลดอาการภาพเบลอ คมชัดแม่นยำที่สุด",
+    "price": "23900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "24.5 inch Fast TN",
+      "Refresh Rate": "360Hz",
+      "Technology": "DyAc+ Technology",
+      "Shield": "Side Shield Hood",
+      "Switch": "S-Switch Controller"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.803Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 97,
+  "fields": {
+    "category": 12,
+    "name": "ASUS TUF Gaming VG27AQML1A 27 inch Fast IPS 260Hz",
+    "brand": "ASUS",
+    "description": "จอ Fast IPS สเปกคุ้มค่า สีสด คมชัดระดับ 2K รีเฟรชเรทโอเวอร์คล็อกได้ถึง 260Hz",
+    "price": "12900.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch Fast IPS",
+      "Resolution": "2K QHD (2560 x 1440)",
+      "Refresh Rate": "260Hz (OC)",
+      "Color": "DisplayHDR 400",
+      "Sync": "ELMB Sync & G-Sync Compatible"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.805Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 98,
+  "fields": {
+    "category": 12,
+    "name": "Dell UltraSharp U2724DE 27 inch 120Hz IPS Black",
+    "brand": "Dell",
+    "description": "จอสำหรับครีเอเตอร์และสายทำงานมืออาชีพ แผง IPS Black คอนทราสต์ 2000:1 พอร์ต Thunderbolt Hub ในตัว",
+    "price": "16900.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch IPS Black Technology",
+      "Resolution": "QHD (2560 x 1440)",
+      "Refresh Rate": "120Hz",
+      "Hub": "Thunderbolt 4 / 90W PD / RJ45",
+      "Color": "100% sRGB, 98% DCI-P3"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.807Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 99,
+  "fields": {
+    "category": 12,
+    "name": "Xiaomi Mini LED Gaming Monitor G Pro 27i 180Hz",
+    "brand": "Xiaomi",
+    "description": "จอ Mini-LED 1,152 Local Dimming Zones ความสว่างทะลุ 1000 nits ดำสนิทระดับ HDR1000 ในราคาจับต้องได้",
+    "price": "10900.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch Fast IPS Mini-LED",
+      "Zones": "1,152 Local Dimming Zones",
+      "Peak Brightness": "1000 nits (HDR1000)",
+      "Refresh Rate": "180Hz",
+      "Resolution": "2K QHD"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.597Z",
+    "updated_at": "2026-11-03T07:13:16.809Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 100,
+  "fields": {
+    "category": 12,
+    "name": "AOC Gaming 24G4 24 inch Fast IPS 180Hz",
+    "brand": "AOC",
+    "description": "จอยอดนิยมราคาประหยัดสำหรับผู้เริ่มต้นเล่นเกม Fast IPS 180Hz 0.5ms ขอบจอบางเฉียบ 3 ด้าน",
+    "price": "4290.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "23.8 inch Fast IPS",
+      "Resolution": "FHD (1920 x 1080)",
+      "Refresh Rate": "180Hz",
+      "Response Time": "0.5ms (MPRT)",
+      "Color": "HDR10 Support"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.811Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 101,
+  "fields": {
+    "category": 13,
+    "name": "Crucial T705 2TB PCIe Gen5 NVMe M.2 SSD with Heatsink",
+    "brand": "Crucial",
+    "description": "SSD ความเร็วสูงที่สุดในโลกทะลุ 14,500 MB/s สถาปัตยกรรม Micron 232-layer 3D TLC",
+    "price": "14900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe Gen 5.0 x4",
+      "Read Speed": "14,500 MB/s",
+      "Write Speed": "12,700 MB/s",
+      "Heatsink": "Custom Copper & Aluminum"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.814Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 102,
+  "fields": {
+    "category": 13,
+    "name": "Corsair MP700 PRO SE 2TB PCIe Gen5 NVMe SSD",
+    "brand": "Corsair",
+    "description": "ไดรฟ์ Gen5 รุ่นท็อป ความเร็วอ่าน 14,000 MB/s พร้อมตัวระบายความร้อนแอ็กทีฟพัดลมจิ๋วในตัว",
+    "price": "12900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 5.0 x4, NVMe 2.0",
+      "Read Speed": "14,000 MB/s",
+      "Write Speed": "12,000 MB/s",
+      "Cooler": "Active Fan Air Cooler"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.818Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 103,
+  "fields": {
+    "category": 13,
+    "name": "Samsung 990 PRO NVMe M.2 SSD 4TB with Heatsink",
+    "brand": "Samsung",
+    "description": "ความจุยักษ์ 4TB ชิปคอนโทรลเลอร์ Samsung Pascal ความเร็วคงที่ ไม่ร้อน เหมาะสำหรับ PC และ PS5",
+    "price": "14500.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "4TB",
+      "Interface": "PCIe 4.0 x4, NVMe 2.0",
+      "Read Speed": "7,450 MB/s",
+      "Write Speed": "6,900 MB/s",
+      "Cache": "4GB LPDDR4 DRAM"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.821Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 104,
+  "fields": {
+    "category": 13,
+    "name": "Samsung 990 PRO NVMe M.2 SSD 2TB with Heatsink",
+    "brand": "Samsung",
+    "description": "SSD Gen4 ตัวท็อปยอดขายอันดับหนึ่ง ความเร็วเสถียร ทนทาน รับประกัน 5 ปี",
+    "price": "6990.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7,450 MB/s",
+      "Write Speed": "6,900 MB/s",
+      "Endurance": "1200 TBW"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.823Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 105,
+  "fields": {
+    "category": 13,
+    "name": "Samsung 990 PRO NVMe M.2 SSD 1TB",
+    "brand": "Samsung",
+    "description": "ขนาดความจุมาตรฐาน 1TB สำหรับติดตั้งระบบปฏิบัติการ Windows และเกมหลัก โหลดเกมเร็วติดจรวด",
+    "price": "4190.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7,450 MB/s",
+      "Write Speed": "6,900 MB/s",
+      "Software": "Samsung Magician"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.825Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 106,
+  "fields": {
+    "category": 13,
+    "name": "WD_BLACK SN850X NVMe SSD 2TB with Heatsink",
+    "brand": "Western Digital",
+    "description": "SSD สำหรับสายเกมมิ่ง มีโหมด Game Mode 2.0 ช่วยคาดการณ์และโหลดฉากล่วงหน้า",
+    "price": "6490.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0",
+      "Read Speed": "7,300 MB/s",
+      "Write Speed": "6,600 MB/s",
+      "Feature": "Game Mode 2.0 & RGB"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.827Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 107,
+  "fields": {
+    "category": 13,
+    "name": "WD_BLACK SN850X NVMe SSD 1TB Non-Heatsink",
+    "brand": "Western Digital",
+    "description": "ความจุ 1TB ใช้ร่วมกับฮีตซิงก์ของเมนบอร์ดได้อย่างแนบสนิท ประสิทธิภาพระดับพรีเมียม",
+    "price": "3790.00",
+    "stock": 24,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0",
+      "Read Speed": "7,300 MB/s",
+      "Write Speed": "6,300 MB/s",
+      "Warranty": "5 Years WD"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.830Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 108,
+  "fields": {
+    "category": 13,
+    "name": "Kingston KC3000 PCIe 4.0 NVMe M.2 SSD 2TB",
+    "brand": "Kingston",
+    "description": "คอนโทรลเลอร์ Phison E18 พร้อมแผ่นกระจายความร้อนแกรฟีนอะลูมิเนียมบางเฉียบ",
+    "price": "5590.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "7,000 MB/s",
+      "Write Speed": "7,000 MB/s",
+      "Controller": "Phison E18"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.603Z",
+    "updated_at": "2026-11-03T07:13:16.832Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 109,
+  "fields": {
+    "category": 13,
+    "name": "Kingston NV3 PCIe 4.0 NVMe SSD 1TB",
+    "brand": "Kingston",
+    "description": "SSD Gen4 ราคาคุ้มค่ารุ่นใหม่ล่าสุด ความเร็วอ่าน 6,000 MB/s กินไฟต่ำ เหมาะกับโน้ตบุ๊กและพีซี",
+    "price": "2490.00",
+    "stock": 35,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "6,000 MB/s",
+      "Write Speed": "4,000 MB/s",
+      "Warranty": "3 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.836Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 110,
+  "fields": {
+    "category": 13,
+    "name": "Crucial P3 Plus 1TB PCIe 4.0 NVMe SSD",
+    "brand": "Crucial",
+    "description": "ไดรฟ์จัดเก็บข้อมูลและเกมคุ้มราคา ประสิทธิภาพเร็วกว่า SSD SATA ทั่วไปถึง 8.9 เท่า",
+    "price": "2390.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "1TB",
+      "Interface": "PCIe 4.0 x4",
+      "Read Speed": "5,000 MB/s",
+      "Write Speed": "4,200 MB/s",
+      "NAND": "Micron Advanced 3D NAND"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.838Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 111,
+  "fields": {
+    "category": 14,
+    "name": "Lian Li O11 Vision Chrome Panoramic Case",
+    "brand": "Lian Li",
+    "description": "เคสกระจกนิรภัย 3 ด้านแบบพาโนรามา ไร้เสามุมบดบังสายตา โชว์ฮาร์ดแวร์ภายในได้ 270 องศา",
+    "price": "5590.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Form Factor": "Dual-Chamber Mid-Tower",
+      "Glass": "3-Sided Tempered Glass",
+      "Radiator Support": "Up to 360mm x2",
+      "GPU Length": "Up to 455mm"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.840Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 112,
+  "fields": {
+    "category": 14,
+    "name": "Lian Li O11 Dynamic EVO RGB White",
+    "brand": "Lian Li",
+    "description": "เคสปรับทิศทางกลับด้านได้ (Reverse Mode) พร้อมเส้นไฟแถบ RGB ด้านหน้า สวยงามทุกมุมมอง",
+    "price": "5990.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Color": "White",
+      "Feature": "Reversible Chassis",
+      "Lighting": "L-shaped Diffused RGB",
+      "Fan Support": "Up to 10 Fans"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.843Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 113,
+  "fields": {
+    "category": 14,
+    "name": "NZXT H9 Flow Dual-Chamber Mid-Tower Black",
+    "brand": "NZXT",
+    "description": "เคสสองห้องแผงด้านข้างและด้านหน้าเป็นกระจกต่อเนื่อง พร้อมแผงตาข่ายด้านบนระบายลมร้อนยอดเยี่ยม",
+    "price": "5790.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Chamber": "Dual-Chamber Design",
+      "Cooling": "Perforated Top Panel",
+      "Fans Included": "4x 120mm Quiet Fans",
+      "Drive Bays": "2x 3.5, 4x 2.5"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.845Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 114,
+  "fields": {
+    "category": 14,
+    "name": "NZXT H6 Flow RGB White Mid-Tower Case",
+    "brand": "NZXT",
+    "description": "ดีไซน์มุมตัดเฉียง 45 องศา พร้อมพัดลม RGB 120 มม. 3 ตัว ดูดลมเย็นตรงสู่การ์ดจอโดยเฉพาะ",
+    "price": "4590.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Design": "Angled Front Intake",
+      "Fans": "3x 120mm RGB Fans Pre-installed",
+      "Color": "Matte White",
+      "GPU Support": "365mm"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.847Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 115,
+  "fields": {
+    "category": 14,
+    "name": "Corsair 3500X ARGB Panoramic Glass Case",
+    "brand": "Corsair",
+    "description": "เคสกระจกพาโนรามาโฉบเฉี่ยว รองรับเมนบอร์ดแบบซ่อนสายด้านหลัง (ASUS BTF, MSI Project Zero)",
+    "price": "3990.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Compatibility": "Reverse Motherboard Compatible (BTF/Project Zero)",
+      "Glass": "Seamless Tempered Glass",
+      "Fans": "3x RS120 ARGB Fans",
+      "Radiator": "Up to 360mm"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.849Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 116,
+  "fields": {
+    "category": 14,
+    "name": "Montech King 95 Pro Panoramic Case with ARGB Fans",
+    "brand": "Montech",
+    "description": "เคสกระจกโค้งพาโนรามา แถมพัดลม ARGB PWM เกรดพรีเมียมมาให้ครบ 6 ตัวในกล่อง",
+    "price": "3990.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Glass": "Curved Industrial Glass",
+      "Fans Included": "6x ARGB PWM Fans (Reversed Blade)",
+      "Fan Hub": "ARGB & PWM Fan Controller Included"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.852Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 117,
+  "fields": {
+    "category": 14,
+    "name": "Lian Li Galahad II LCD 360 RGB AIO Liquid Cooler White",
+    "brand": "Lian Li",
+    "description": "ชุดน้ำปิด 360 มม. หน้าจอ IPS LCD ขนาด 2.88 นิ้ว คมชัด แสดงคลิป GIF และอุณหภูมิซีพียูสด",
+    "price": "8990.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Radiator": "360mm Aluminum",
+      "Screen": "2.88 inch IPS LCD (480x480)",
+      "Pump": "Asetek 8th Gen Pump",
+      "Color": "White",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.855Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 118,
+  "fields": {
+    "category": 14,
+    "name": "NZXT Kraken Elite 360 RGB Liquid Cooler Black",
+    "brand": "NZXT",
+    "description": "ชุดน้ำระดับท็อป หน้าจอ LCD วงกลมขนาด 2.36 นิ้ว รีเฟรชเรท 60Hz พัดลม F120 RGB Core เงียบสนิท",
+    "price": "9990.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Radiator": "360mm",
+      "Screen": "2.36 inch 640x640 60Hz LCD",
+      "Fans": "3x F120 RGB Core Fans",
+      "Software": "NZXT CAM Control",
+      "Warranty": "6 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.857Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 119,
+  "fields": {
+    "category": 14,
+    "name": "Corsair iCUE LINK TITAN 360 RX RGB Liquid Cooler",
+    "brand": "Corsair",
+    "description": "ชุดน้ำปิดเทคโนโลยี iCUE LINK เดินสายไฟเพียงเส้นเดียว เชื่อมต่อพัดลมและปั๊มแบบ Daisy-Chain",
+    "price": "6990.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Radiator": "360mm",
+      "Technology": "iCUE LINK Single-cable",
+      "Engine": "FlowDrive Cooling Engine",
+      "Fans": "3x RX120 RGB Fans",
+      "Warranty": "6 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.859Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 120,
+  "fields": {
+    "category": 14,
+    "name": "ASUS ROG Ryujin III 360 ARGB White Edition",
+    "brand": "ASUS",
+    "description": "ชุดน้ำพรีเมียมที่สุดของ ROG หน้าจอ LCD 3.5 นิ้ว พัดลมแม่เหล็ก Magnetic Daisy-chain ไร้สาย",
+    "price": "13900.00",
+    "stock": 5,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Radiator": "360mm",
+      "Screen": "3.5 inch Full-color LCD",
+      "Embedded Fan": "VRM Fan inside pump",
+      "Fans": "Magnetic ARGB Daisy-chain Fans",
+      "Warranty": "6 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.861Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 121,
+  "fields": {
+    "category": 14,
+    "name": "Thermalright Aqua Elite 360 V3 ARGB Liquid Cooler",
+    "brand": "Thermalright",
+    "description": "ชุดน้ำ 3 ตอน 360 มม. ราคาคุ้มค่าที่สุดในประวัติศาสตร์ ประสิทธิภาพระบายความร้อนยอดเยี่ยม",
+    "price": "2490.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Radiator": "360mm",
+      "Pump": "Pure Copper Base",
+      "Fans": "3x TL-C12B-S V2 PWM",
+      "Lighting": "5V ARGB Sync",
+      "Warranty": "3 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.863Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 122,
+  "fields": {
+    "category": 14,
+    "name": "DeepCool LT720 High-Performance Liquid Cooler",
+    "brand": "DeepCool",
+    "description": "ฝาครอบปั๊มกระจกเงาสะท้อนแสงอินฟินิตี้มิติหลายเหลี่ยม ปั๊มน้ำเจเนอเรชันที่ 4 แรงดันสูง",
+    "price": "4290.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Radiator": "360mm Anti-leak Tech",
+      "Pump": "4th Gen High-efficiency Pump",
+      "Block": "Multidimensional Infinity Mirror",
+      "Fans": "3x FK120 FDB Fans",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:43:05.604Z",
+    "updated_at": "2026-11-03T07:13:16.867Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 123,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core Ultra 7 265KF",
+    "brand": "Intel",
+    "description": "ซีพียูรุ่นไม่มีกราฟิกในตัว สเปกแรง 20 Cores ประหยัดไฟ อุณหภูมิเย็นขึ้น",
+    "price": "15900.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Cores": "20C (8P+12E)",
+      "Max Clock": "5.5 GHz",
+      "TDP": "125W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.871Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 124,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core Ultra 5 245KF",
+    "brand": "Intel",
+    "description": "รุ่นยอดนิยมสำหรับเกมเมอร์ที่ใช้การ์ดจอแยก สถาปัตยกรรม Arrow Lake สุดล้ำ",
+    "price": "11900.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Cores": "14C (6P+8E)",
+      "Max Clock": "5.2 GHz",
+      "TDP": "125W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.873Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 125,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i7-14700KF",
+    "brand": "Intel",
+    "description": "20 คอร์ 28 เธรด ปลดล็อกโอเวอร์คล็อก คุ้มค่าที่สุดสำหรับการทำงานและเล่นเกมหนัก",
+    "price": "15400.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores": "20C / 28T",
+      "Max Clock": "5.6 GHz",
+      "TDP": "125W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.875Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 126,
+  "fields": {
+    "category": 7,
+    "name": "Intel Core i5-14600KF",
+    "brand": "Intel",
+    "description": "ซีพียูเกมมิ่งยอดฮิต 14 คอร์ ความเร็ว 5.3 GHz รองรับ DDR4 และ DDR5",
+    "price": "10900.00",
+    "stock": 22,
+    "image_url": "https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1700",
+      "Cores": "14C (6P+8E)",
+      "Max Clock": "5.3 GHz",
+      "TDP": "125W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.878Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 127,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 5 7600X",
+    "brand": "AMD",
+    "description": "ซีพียู 6 Cores 12 Threads สถาปัตยกรรม Zen 4 ความเร็ว 5.3 GHz คุ้มราคา",
+    "price": "7990.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores": "6C / 12T",
+      "Base/Boost": "4.7 / 5.3 GHz",
+      "TDP": "105W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.881Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 128,
+  "fields": {
+    "category": 7,
+    "name": "AMD Ryzen 5 7500F",
+    "brand": "AMD",
+    "description": "ซีพียูเกมมิ่ง AM5 ราคาประหยัดที่สุด ไม่มีชิปการ์ดจอในตัว เหมาะกับชุดคอมประกอบคุ้มค่า",
+    "price": "5890.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Cores": "6C / 12T",
+      "Base/Boost": "3.7 / 5.0 GHz",
+      "TDP": "65W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.883Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 129,
+  "fields": {
+    "category": 8,
+    "name": "Colorful iGame GeForce RTX 4080 Super Vulcan OC 16GB",
+    "brand": "Colorful",
+    "description": "การ์ดจอดีไซน์ล้ำยุค หน้าจอ LCD iGame Smart LCD ถอดแยกมาวางบนโต๊ะได้",
+    "price": "43900.00",
+    "stock": 6,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Screen": "iGame Smart LCD 800x216",
+      "Cooling": "Vacuum Chamber",
+      "Power": "850W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.887Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 130,
+  "fields": {
+    "category": 8,
+    "name": "Colorful iGame GeForce RTX 4070 Ti Super Ultra W OC 16GB",
+    "brand": "Colorful",
+    "description": "การ์ดจอสีขาวโฮโลแกรมสไตล์ Pop-art โดดเด่นไม่ซ้ำใคร พัดลม 3 ตัวเงียบสนิท",
+    "price": "33500.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Theme": "Ultra White Holographic",
+      "Fans": "Triple 100mm Fans",
+      "Power": "750W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.889Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 131,
+  "fields": {
+    "category": 8,
+    "name": "Inno3D GeForce RTX 4070 Super Twin X2 White 12GB",
+    "brand": "Inno3D",
+    "description": "ขนาดตัวการ์ดกะทัดรัด 2 พัดลมสีขาวล้วน เหมาะกับเคสขนาดเล็กและเคส ITX",
+    "price": "22900.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "12GB GDDR6X",
+      "Length": "250mm Compact",
+      "Fans": "Twin 90mm Scythe",
+      "Power": "650W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.891Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 132,
+  "fields": {
+    "category": 8,
+    "name": "Intel Arc A770 Phantom Gaming 16GB OC",
+    "brand": "ASRock",
+    "description": "การ์ดจอแยกจากค่าย Intel แรมจุ 16GB พร้อมตัวถอดรหัส AV1 ฮาร์ดแวร์คู่สำหรับสตรีมเมอร์",
+    "price": "12900.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6 256-bit",
+      "Xe Cores": "32",
+      "Ray Tracing": "32 Units",
+      "AV1 Hardware": "Dual Encoder"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.893Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 133,
+  "fields": {
+    "category": 8,
+    "name": "Sapphire Pure AMD Radeon RX 7800 XT 16GB White",
+    "brand": "Sapphire",
+    "description": "การ์ดจอสีขาวหรูหรา ไฟ LED โลโก้สีแดง Sapphire Pure ระบายความร้อนด้วยพัดลมแกนคู่",
+    "price": "20900.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6",
+      "Color": "Pure White Edition",
+      "Fans": "Tri-X Cooling",
+      "Power": "700W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.895Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 134,
+  "fields": {
+    "category": 8,
+    "name": "ASUS ProArt GeForce RTX 4080 Super 16GB",
+    "brand": "ASUS",
+    "description": "การ์ดจอสายครีเอเตอร์และดีไซเนอร์ โทนดำตัดทอง มินิมอล บางเพียง 2.5 สล็อต",
+    "price": "44900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Design": "ProArt Sleek 2.5 Slot",
+      "Driver": "NVIDIA Studio Ready",
+      "Color": "Black & Gold"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.897Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 135,
+  "fields": {
+    "category": 8,
+    "name": "ASUS ProArt GeForce RTX 4070 Ti Super 16GB",
+    "brand": "ASUS",
+    "description": "เหมาะสำหรับนักตัดต่อวิดีโอ 3D Animator และผู้สร้างโมเดล AI เสียงพัดลมเบาเป็นพิเศษ",
+    "price": "35900.00",
+    "stock": 9,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Memory": "16GB GDDR6X",
+      "Noise": "Whisper Quiet 0dB",
+      "Subscription": "3 Months Adobe Free",
+      "Power": "750W"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.899Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 136,
+  "fields": {
+    "category": 9,
+    "name": "ASRock Z890 Taichi",
+    "brand": "ASRock",
+    "description": "ดีไซน์ฟันเฟือง Taichi อันเป็นเอกลักษณ์ ภาคจ่ายไฟ 22 เฟส SPS 110A ช่อง M.2 PCIe 5.0",
+    "price": "19900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Power": "20+1+2+1+1 Phases",
+      "Ports": "Dual Thunderbolt 4",
+      "Form": "E-ATX"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.903Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 137,
+  "fields": {
+    "category": 9,
+    "name": "Colorful CVN Z890M GAMING FROZEN V20",
+    "brand": "Colorful",
+    "description": "เมนบอร์ด Micro-ATX สีขาวลายเรือรบอวกาศ รองรับ Intel Ultra ราคาเข้าถึงง่าย",
+    "price": "7990.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1563770660941-20978e870e26?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "LGA1851",
+      "Chipset": "Intel Z890",
+      "Form": "Micro-ATX",
+      "Color": "Frozen White",
+      "Wi-Fi": "Wi-Fi 7"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.906Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 138,
+  "fields": {
+    "category": 9,
+    "name": "ASUS ROG Strix B650E-F Gaming WiFi",
+    "brand": "ASUS",
+    "description": "รองรับสล็อตการ์ดจอ PCIe 5.0 และ M.2 PCIe 5.0 ในชิปเซ็ตระดับกลาง B650E",
+    "price": "9990.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD B650E",
+      "PCIe 5.0": "PCIe 5.0 x16 Slot",
+      "VRM": "12+2 Power Stages",
+      "Wi-Fi": "Wi-Fi 6E"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.909Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 139,
+  "fields": {
+    "category": 9,
+    "name": "Gigabyte B650M AORUS Elite AX ICE",
+    "brand": "Gigabyte",
+    "description": "เมนบอร์ดสีขาวล้วนยอดนิยม แผ่น PCB สีขาว ฮีตซิงก์สีเงินเงางามสำหรับ AM5",
+    "price": "6990.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD B650",
+      "PCB": "All-White ICE Design",
+      "Form Factor": "Micro-ATX",
+      "Wi-Fi": "Wi-Fi 6E"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.912Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 140,
+  "fields": {
+    "category": 9,
+    "name": "MSI MAG B650 Tomahawk WiFi",
+    "brand": "MSI",
+    "description": "เมนบอร์ดไซส์ ATX ดำด้านลายทหาร อึด ทน นิ่ง สำหรับผู้ที่ต้องการประกอบคอมใช้งานระยะยาว",
+    "price": "7490.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Socket": "AM5",
+      "Chipset": "AMD B650",
+      "Power": "14+2+1 Duet Rail",
+      "LAN": "Realtek 2.5G",
+      "Audio": "ALC4080"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.914Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 141,
+  "fields": {
+    "category": 10,
+    "name": "G.SKILL Trident Z5 Royal DDR5 32GB (16GBx2) 7200MHz Gold",
+    "brand": "G.Skill",
+    "description": "แรมสีทองคำแท้สว่างเจิดจ้า แถบไฟคริสตัลอัญมณีหรูหราระดับ Masterpiece",
+    "price": "8490.00",
+    "stock": 8,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 7200 MHz",
+      "Color": "Luxury Gold Mirror",
+      "Lighting": "Crystalline RGB"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.916Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 142,
+  "fields": {
+    "category": 10,
+    "name": "G.SKILL Ripjaws S5 DDR5 64GB (32GBx2) 6000MHz Black",
+    "brand": "G.Skill",
+    "description": "แรมความจุสูง 64GB บัส 6000MHz ไร้ไฟ RGB ฮีตซิงก์เตี้ย 33 มม. ติดตั้งง่าย",
+    "price": "7990.00",
+    "stock": 14,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "DDR5 6000 MHz",
+      "Design": "Low Profile 33mm",
+      "RGB": "Non-RGB"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.920Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 143,
+  "fields": {
+    "category": 10,
+    "name": "Corsair Vengeance RGB DDR5 64GB (32GBx2) 6400MHz Black",
+    "brand": "Corsair",
+    "description": "ชุดแรม 64GB สเปกแรงสำหรับตัดต่อ 4K/8K เรนเดอร์ 3D และเปิดโปรแกรมพร้อมกัน",
+    "price": "8990.00",
+    "stock": 12,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "64GB (2x32GB)",
+      "Speed": "DDR5 6400 MHz",
+      "Timing": "CL32",
+      "Lighting": "Dynamic RGB iCUE"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.923Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 144,
+  "fields": {
+    "category": 10,
+    "name": "Kingston Fury Renegade RGB DDR5 48GB (24GBx2) 6400MHz",
+    "brand": "Kingston",
+    "description": "ความจุพิเศษ 48GB นอนไบนารี สปีด 6400MHz พร้อมไฟอินฟราเรดซิงก์แม่นยำ",
+    "price": "7490.00",
+    "stock": 15,
+    "image_url": "/products/ram_module.jpg",
+    "specs": {
+      "Capacity": "48GB (2x24GB)",
+      "Speed": "DDR5 6400 MHz",
+      "Design": "Silver/Black Wing",
+      "Infrared": "Infrared Sync RGB"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.925Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 145,
+  "fields": {
+    "category": 7,
+    "name": "Thermaltake TOUGHRAM XG D5 RGB 32GB (16GBx2) 6000MHz",
+    "brand": "Thermaltake",
+    "description": "ดีไซน์ Geometric สองโทนสี ไฟ LED 16 ดวง กระจายแสงนุ่มนวลเป็นธรรมชาติ",
+    "price": "4490.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "32GB (2x16GB)",
+      "Speed": "DDR5 6000 MHz",
+      "LEDs": "16 Addressable LEDs",
+      "Heatspreader": "Aluminum 1.8mm"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.927Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 146,
+  "fields": {
+    "category": 11,
+    "name": "be quiet! Dark Power Pro 13 1300W Titanium ATX 3.0",
+    "brand": "be quiet!",
+    "description": "มาตรฐานสูงสุด 80 PLUS Titanium ประสิทธิภาพแปลงไฟ 94.4% พัดลม Silent Wings ไร้เสียงรบกวน",
+    "price": "14900.00",
+    "stock": 5,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1300W",
+      "Efficiency": "80 PLUS Titanium (94.4%)",
+      "Fan": "Frameless Silent Wings Fan",
+      "Standard": "ATX 3.0 / PCIe 5.0"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.929Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 147,
+  "fields": {
+    "category": 11,
+    "name": "be quiet! Straight Power 12 1000W Platinum ATX 3.0",
+    "brand": "be quiet!",
+    "description": "ระดับ 80 PLUS Platinum เงียบกริบตามสไตล์เยอรมัน พร้อมสายถัก 12VHPWR 600W",
+    "price": "7990.00",
+    "stock": 10,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "1000W",
+      "Efficiency": "80 PLUS Platinum",
+      "Cable": "PCIe 5.0 600W Native",
+      "Warranty": "10 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.931Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 148,
+  "fields": {
+    "category": 11,
+    "name": "Lian Li SP850 850W Gold SFX Small Form Factor",
+    "brand": "Lian Li",
+    "description": "พาวเวอร์ขนาดจิ๋ว SFX จ่ายไฟสูงถึง 850W พร้อมสายถักและหัวต่อ 12VHPWR สำหรับเคส ITX",
+    "price": "4890.00",
+    "stock": 12,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Size": "SFX Compact (100x63.5x125mm)",
+      "Wattage": "850W Gold",
+      "Cables": "Individual Braided Cables",
+      "Standard": "PCIe 5.0 16-pin"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.934Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 149,
+  "fields": {
+    "category": 11,
+    "name": "MSI MAG A750GL PCIE5 750W 80 PLUS Gold",
+    "brand": "MSI",
+    "description": "พาวเวอร์ซัพพลาย 750W มาตรฐานใหม่ PCIe 5.0 คุ้มค่าที่สุดสำหรับการ์ดจอ RTX 4070 / 4060 Ti",
+    "price": "3690.00",
+    "stock": 22,
+    "image_url": "/products/psu_modular.jpg",
+    "specs": {
+      "Wattage": "750W",
+      "Efficiency": "80 PLUS Gold",
+      "Connector": "Native 12V-2x6",
+      "Warranty": "7 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.937Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 150,
+  "fields": {
+    "category": 12,
+    "name": "Samsung Odyssey Neo G9 57 inch Dual 4K 240Hz Mini-LED",
+    "brand": "Samsung",
+    "description": "จอที่กว้างที่สุดในโลก 57 นิ้ว ความละเอียด Dual 4K (7680x2160) สัดส่วน 32:9 และโค้ง 1000R",
+    "price": "79900.00",
+    "stock": 3,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "57 inch Quantum Mini-LED 1000R",
+      "Resolution": "Dual 4K UHD (7680 x 2160)",
+      "Refresh Rate": "240Hz",
+      "Zones": "2,048 Dimming Zones"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.940Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 151,
+  "fields": {
+    "category": 12,
+    "name": "ASUS ROG Swift OLED PG27AQDM 27 inch 240Hz",
+    "brand": "ASUS",
+    "description": "จอ OLED 27 นิ้ว ระบบระบายความร้อนแบบปรับแต่งเอง Custom Heatsink ป้องกันอาการเบิร์นอิน",
+    "price": "27900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "26.5 inch OLED QHD",
+      "Refresh Rate": "240Hz",
+      "Response Time": "0.03ms",
+      "Heatsink": "Custom Heatsink with Voltage Optimization"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.942Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 152,
+  "fields": {
+    "category": 12,
+    "name": "Alienware 27 360Hz QD-OLED Gaming Monitor (AW2725DF)",
+    "brand": "Alienware",
+    "description": "จอ QD-OLED ขนาด 27 นิ้ว รีเฟรชเรทพุ่งถึง 360Hz สีสันสดใส คมชัดในทุกการเคลื่อนไหว",
+    "price": "29900.00",
+    "stock": 7,
+    "image_url": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch QD-OLED 360Hz",
+      "Resolution": "QHD (2560 x 1440)",
+      "Color": "99.3% DCI-P3",
+      "Response": "0.03ms (GtG)"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.944Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 153,
+  "fields": {
+    "category": 12,
+    "name": "MSI MAG 274QRF QD E2 27 inch 180Hz Rapid IPS",
+    "brand": "MSI",
+    "description": "จอ Rapid IPS พร้อมเทคโนโลยี Quantum Dot สีสดใสสมจริง คอนทราสต์ยอดเยี่ยม คุ้มราคา",
+    "price": "8990.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch Rapid IPS Quantum Dot",
+      "Resolution": "2K WQHD (2560 x 1440)",
+      "Refresh Rate": "180Hz",
+      "Response Time": "1ms GtG"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.946Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 154,
+  "fields": {
+    "category": 12,
+    "name": "Gigabyte GS27QC 27 inch 180Hz Curved 1500R",
+    "brand": "Gigabyte",
+    "description": "จอโค้ง 1500R โอบรับสายตา ความละเอียด 2K 180Hz ราคาประหยัด สบายตาเล่นเกมยาวนาน",
+    "price": "5990.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1551645120-d70bfe84c826?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Panel": "27 inch Curved VA 1500R",
+      "Resolution": "QHD 2560x1440",
+      "Refresh Rate": "180Hz",
+      "Contrast": "4000:1"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.948Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 155,
+  "fields": {
+    "category": 13,
+    "name": "Samsung 990 EVO Plus NVMe M.2 SSD 2TB",
+    "brand": "Samsung",
+    "description": "SSD Gen5 Hybrid สปีดอ่าน 7,250 MB/s สถาปัตยกรรม V-NAND ล่าสุด ประหยัดไฟขึ้น 70%",
+    "price": "5490.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1531492746076-161ca9bcad58?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "2TB",
+      "Interface": "PCIe 4.0 x4 / PCIe 5.0 x2",
+      "Read Speed": "7,250 MB/s",
+      "Write Speed": "6,300 MB/s"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.951Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 156,
+  "fields": {
+    "category": 13,
+    "name": "Samsung 990 EVO Plus NVMe M.2 SSD 1TB",
+    "brand": "Samsung",
+    "description": "ขนาด 1TB คุ้มค่า สปีด 7,150 MB/s เย็นและกินไฟต่ำมาก เหมาะกับคอมทำงานและโน้ตบุ๊ก",
+    "price": "3290.00",
+    "stock": 30,
+    "image_url": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Capacity": "1TB",
+      "Speed": "7,150 MB/s Read",
+      "NAND": "Samsung 8th Gen V-NAND",
+      "Warranty": "5 Years"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.955Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 157,
+  "fields": {
+    "category": 7,
+    "name": "Phanteks NV5 Panoramic Glass Mid-Tower Black",
+    "brand": "Phanteks",
+    "description": "เคสกระจกนิรภัย 2 ด้านไร้เสากลาง ออกแบบให้ซ่อนสายไฟเมนบอร์ดและฮาร์ดแวร์ได้อย่างเรียบเนียน",
+    "price": "3790.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1555680202-c86f0e12f086?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Glass": "Seamless Front & Side Glass",
+      "PSU Shroud": "Integrated DRGB Lighting",
+      "Fan Support": "Up to 8x 120mm Fans"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.958Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 158,
+  "fields": {
+    "category": 7,
+    "name": "Fractal Design North Charcoal Black Mesh",
+    "brand": "Fractal Design",
+    "description": "เคสดีไซน์ Scandinavian หน้าเคสตกแต่งด้วยไม้แท้ Real Walnut หรูหราระดับเฟอร์นิเจอร์",
+    "price": "5490.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Front Panel": "Real FSC-certified Walnut Wood",
+      "Airflow": "Mesh Side Panel",
+      "Fans": "2x Aspect 14 PWM Fans"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.960Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 159,
+  "fields": {
+    "category": 7,
+    "name": "Fractal Design North Chalk White TG",
+    "brand": "Fractal Design",
+    "description": "เคสสีขาวสไตล์นอร์ดิก ตกแต่งด้วยไม้ Oak แท้สีสว่าง พร้อมฝาข้างกระจกนิรภัยสวยงาม",
+    "price": "5690.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1544652478-6653e09f18a2?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Front Panel": "Real Oak Wood Slats",
+      "Glass": "Clear Tempered Glass",
+      "Color": "Chalk White with Brass Accents"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.963Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 160,
+  "fields": {
+    "category": 14,
+    "name": "Lian Li HydroShift LCD 360S AIO Liquid Cooler Black",
+    "brand": "Lian Li",
+    "description": "ชุดน้ำนวัตกรรมใหม่ซ่อนสายยางระบายความร้อนแนบไปกับหม้อน้ำ หน้าจอ LCD 2.4 นิ้ว",
+    "price": "6990.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Screen": "2.4 inch IPS LCD (480x480)",
+      "Tubing": "Side-mounted Hidden Tubing",
+      "Radiator": "360mm",
+      "Fans": "3x Pre-installed ARGB"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.965Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 161,
+  "fields": {
+    "category": 14,
+    "name": "NZXT Kraken 360 RGB Liquid Cooler White",
+    "brand": "NZXT",
+    "description": "ชุดน้ำ 360 มม. สีขาวบริสุทธิ์ หน้าจอ LCD สี่เหลี่ยม 1.54 นิ้ว แสดงอุณหภูมิซีพียูและจียูชัดเจน",
+    "price": "7490.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1624705002806-5d72df19c3ad?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Screen": "1.54 inch Square LCD",
+      "Color": "Matte White",
+      "Pump": "Asetek 7th Gen",
+      "Fans": "3x F120 RGB Core Fans"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:25.121Z",
+    "updated_at": "2026-11-03T07:13:16.968Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 162,
+  "fields": {
+    "category": 15,
+    "name": "Logitech G PRO X 2 LIGHTSPEED Wireless Gaming Headset",
+    "brand": "Logitech G",
+    "description": "ไดรเวอร์กราฟีน 50 มม. ความแม่นยำเสียงระดับ eSports",
+    "price": "8990.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Driver": "50mm Graphene",
+      "Wireless": "LIGHTSPEED 2.4GHz",
+      "Battery": "Up to 50 hours"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.313Z",
+    "updated_at": "2026-11-03T07:13:16.971Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 163,
+  "fields": {
+    "category": 15,
+    "name": "Razer BlackShark V2 Pro (2024 Edition) Wireless",
+    "brand": "Razer",
+    "description": "ไมค์ HyperClear Super Wideband ชัดเจนที่สุด พร้อมโปรไฟล์เสียงเกม FPS โดยเฉพาะ",
+    "price": "6990.00",
+    "stock": 18,
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Microphone": "HyperClear Super Wideband",
+      "Battery": "70 Hours",
+      "Weight": "320g"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.973Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 164,
+  "fields": {
+    "category": 15,
+    "name": "SteelSeries Arctis Nova Pro Wireless Headset",
+    "brand": "SteelSeries",
+    "description": "ระบบเสียง Multi-System Connect สลับระหว่าง PC และคอนโซล พร้อมตัดเสียงรบกวน ANC",
+    "price": "14500.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "ANC": "Active Noise Cancellation",
+      "DAC": "Base Station with OLED",
+      "Battery": "Dual Swappable Batteries"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.975Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 165,
+  "fields": {
+    "category": 15,
+    "name": "Razer Viper V3 Pro Wireless Gaming Mouse White",
+    "brand": "Razer",
+    "description": "เมาส์เกมมิ่งน้ำหนักเบาเพียง 54 กรัม โพลลิ่งเรทไร้สายทะลุ 8000Hz ไร้ดีเลย์",
+    "price": "5990.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Weight": "54g Ultra-lightweight",
+      "Polling Rate": "True 8000Hz Wireless",
+      "Sensor": "Focus Pro 35K Gen-2"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.977Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 166,
+  "fields": {
+    "category": 15,
+    "name": "Logitech G502 X PLUS LIGHTSPEED RGB Mouse",
+    "brand": "Logitech G",
+    "description": "เมาส์ตามหลักสรีรศาสตร์ สวิตช์ไฮบริด LIGHTFORCE ออปติคอล-แมคคานิคอล",
+    "price": "5290.00",
+    "stock": 22,
+    "image_url": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Switches": "LIGHTFORCE Hybrid Optical-Mechanical",
+      "Sensor": "HERO 25K",
+      "Buttons": "13 Programmable"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.979Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 167,
+  "fields": {
+    "category": 15,
+    "name": "Wooting 60HE+ Analog Mechanical Keyboard",
+    "brand": "Wooting",
+    "description": "คีย์บอร์ดแม่เหล็ก Hall Effect อันดับ 1 ของโลก ระบบ Rapid Trigger ตอบสนอง 0.1ms",
+    "price": "8490.00",
+    "stock": 10,
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=700&q=80",
+    "specs": {
+      "Switches": "Lekker Hall Effect Magnetic",
+      "Rapid Trigger": "0.1mm - 4.0mm Adjustable",
+      "Layout": "60% Compact"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.981Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 168,
+  "fields": {
+    "category": 15,
+    "name": "Razer Huntsman V3 Pro Tenkeyless Analog Keyboard",
+    "brand": "Razer",
+    "description": "สวิตช์อนาล็อกออปติคอลเจนเนอเรชันที่ 2 ปรับระยะกดได้ละเอียด พร้อมลูกบิดมัลติฟังก์ชัน",
+    "price": "7990.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Switches": "Gen-2 Analog Optical",
+      "Layout": "TKL (80%)",
+      "Dial": "Digital Dial with Preset LEDs"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.984Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 169,
+  "fields": {
+    "category": 15,
+    "name": "Keychron Q3 Max Wireless Custom Keyboard Black",
+    "brand": "Keychron",
+    "description": "คีย์บอร์ดคัสตอมบอดี้อะลูมิเนียม CNC Layout TKL สวิตช์ Gateron Jupiter ปรับแต่งผ่าน QMK/VIA",
+    "price": "8190.00",
+    "stock": 12,
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Body": "Full CNC Aluminum",
+      "Connectivity": "2.4GHz / Bluetooth / Type-C",
+      "Hot-swap": "Yes"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.988Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 170,
+  "fields": {
+    "category": 15,
+    "name": "Shure SM7B Cardioid Dynamic Vocal Microphone",
+    "brand": "Shure",
+    "description": "ไมค์ไดนามิกมาตรฐานสตูดิโอระดับโลกสำหรับแคสเตอร์ สตรีมเมอร์ และพอดแคสต์",
+    "price": "15900.00",
+    "stock": 8,
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Type": "Dynamic",
+      "Pattern": "Cardioid",
+      "Shielding": "Electromagnetic Hum Rejection"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.992Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 171,
+  "fields": {
+    "category": 15,
+    "name": "Elgato Wave:3 Premium USB Condenser Microphone",
+    "brand": "Elgato",
+    "description": "ไมค์คอนเดนเซอร์ USB เสียบใช้ได้ทันที เทคโนโลยี Clipguard ป้องกันเสียงแตกพร่า",
+    "price": "5990.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Resolution": "24-bit / 96kHz",
+      "Technology": "Clipguard Anti-distortion",
+      "Software": "Wave Link Mixer"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.994Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 172,
+  "fields": {
+    "category": 15,
+    "name": "Elgato Stream Deck MK.2 White Edition",
+    "brand": "Elgato",
+    "description": "คอนโทรลเลอร์ปุ่ม LCD 15 ปุ่ม ควบคุมการสตรีม ปรับเสียง เปิดโปรแกรมเพียงสัมผัสเดียว",
+    "price": "5490.00",
+    "stock": 20,
+    "image_url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Keys": "15 Customizable LCD Keys",
+      "Interface": "USB 2.0",
+      "Stand": "45-degree Detachable"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:16.998Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 173,
+  "fields": {
+    "category": 15,
+    "name": "Logitech Brio 4K Ultra HD Webcam with HDR",
+    "brand": "Logitech",
+    "description": "กล้องเว็บแคมความละเอียด 4K HDR ซูมดิจิทัล 5 เท่า รองรับการล็อกอินผ่านใบหน้า Windows Hello",
+    "price": "6890.00",
+    "stock": 15,
+    "image_url": "https://images.unsplash.com/photo-1585792180666-f7347c490ee2?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Resolution": "4K / 30fps, 1080p / 60fps",
+      "HDR": "RightLight 3 with HDR",
+      "Security": "Windows Hello Infrared"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:17.002Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 174,
+  "fields": {
+    "category": 15,
+    "name": "Sony Inzone H9 Wireless Noise Canceling Headset",
+    "brand": "Sony",
+    "description": "หูฟังเกมมิ่งระบบตัดเสียงรบกวน Dual Noise Sensor และระบบเสียง 360 Spatial Sound",
+    "price": "7990.00",
+    "stock": 14,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Sound": "360 Spatial Sound for Gaming",
+      "ANC": "Active Noise Canceling",
+      "Battery": "32 Hours"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:17.006Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 175,
+  "fields": {
+    "category": 15,
+    "name": "Audio-Technica ATH-M50xBT2 Wireless Headphones",
+    "brand": "Audio-Technica",
+    "description": "หูฟังมอนิเตอร์ระดับตำนาน ไดรเวอร์ 45 มม. เสียงแม่นยำทุกย่านความถี่ รองรับ LDAC",
+    "price": "6990.00",
+    "stock": 16,
+    "image_url": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Driver": "45mm Large-aperture",
+      "DAC": "AK4331 DAC & Amp",
+      "Codec": "LDAC / AAC / SBC"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:17.009Z"
+  }
+},
+{
+  "model": "api.product",
+  "pk": 176,
+  "fields": {
+    "category": 15,
+    "name": "HyperX Cloud III Wireless Gaming Headset Black/Red",
+    "brand": "HyperX",
+    "description": "หูฟังเกมมิ่งใส่สบายที่สุดในโลก แบตเตอรี่อึดทนนานถึง 120 ชั่วโมงต่อการชาร์จครั้งเดียว",
+    "price": "4890.00",
+    "stock": 25,
+    "image_url": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80",
+    "specs": {
+      "Battery Life": "Up to 120 Hours",
+      "Driver": "53mm Angled Drivers",
+      "Audio": "DTS Headphone:X Spatial Audio"
+    },
+    "is_active": true,
+    "created_at": "2026-11-03T06:45:49.314Z",
+    "updated_at": "2026-11-03T07:13:17.011Z"
+  }
+},
+{
+  "model": "api.companyinfo",
+  "pk": 1,
+  "fields": {
+    "name": "IHAVEIT Solutions & IT Store",
+    "tagline": "ผู้นำเข้าและจัดจำหน่ายอุปกรณ์คอมพิวเตอร์และสินค้าไอทีชั้นนำ",
+    "about": "ศูนย์รวมอุปกรณ์ไอที คอมพิวเตอร์ประกอบระดับไฮเอนด์ การ์ดจอ ซีพียู เมนบอร์ด แรม และเกมมิ่งเกียร์ของแท้ประกันศูนย์ไทย 100%",
+    "vision": "เป็นแพลตฟอร์มและศูนย์รวมเทคโนโลยีไอทีที่ทันสมัย มีความน่าเชื่อถือ และให้บริการดีที่สุดในภูมิภาค",
+    "mission": "1. คัดสรรอุปกรณ์และเทคโนโลยีประสิทธิภาพสูงที่ได้มาตรฐานระดับโลก\n2. พัฒนาระบบการสั่งซื้อและบริการที่สะดวกรวดเร็ว แม่นยำ และปลอดภัย\n3. ให้คำปรึกษา แนะนำโซลูชัน และบริการหลังการขายอย่างมืออาชีพ",
+    "email": "support@ihaveit.co.th",
+    "phone": "02-999-8877",
+    "address": "123/45 ถนนวิภาวดีรังสิต แขวงจตุจักร เขตจตุจักร กรุงเทพฯ",
+    "business_hours": "จันทร์ - อาทิตย์: 09:00 - 20:00 น."
+  }
+},
+{
+  "model": "api.banner",
+  "pk": 1,
+  "fields": {
+    "title_main": "ผ่อน 0% X",
+    "title_sub": "นานสูงสุด 48 เดือน*",
+    "tag": "IHAVEIT EASY PAY x บัตรเครดิตชั้นนำ",
+    "description": "ผ่อนคอมประกอบ อุปกรณ์ฮาร์ดแวร์ และเกมมิ่งเกียร์ สบายกระเป๋า รับเครดิตเงินคืนรวมสูงสุด 21%*",
+    "image_url": "/banners/banner_installment.jpg",
+    "link": "/products",
+    "btn_text": "เช็คโปรโมชั่นผ่อน",
+    "bg_gradient": "linear-gradient(135deg, #0f2b6b 0%, #1d4ed8 45%, #0284c7 80%, #0369a1 100%)",
+    "is_active": true,
+    "order": 1,
+    "created_at": "2026-11-03T07:52:58.906Z"
+  }
+},
+{
+  "model": "api.banner",
+  "pk": 2,
+  "fields": {
+    "title_main": "RTX 40 SUPER",
+    "title_sub": "พลัง AI เจเนอเรชันใหม่",
+    "tag": "NVIDIA GEFORCE RTX 40 SUPER SERIES",
+    "description": "พร้อมส่งทันที ทั้ง RTX 4070 Ti Super, 4080 Super และ 4090 ซื้อวันนี้แถมฟรีโค้ดเกมฟอร์มยักษ์และเสื้อ Limited",
+    "image_url": "/banners/banner_rtx40.jpg",
+    "link": "/products?category=8",
+    "btn_text": "เลือกดูการ์ดจอเลย",
+    "bg_gradient": "linear-gradient(135deg, #05140d 0%, #064e3b 50%, #047857 80%, #065f46 100%)",
+    "is_active": true,
+    "order": 2,
+    "created_at": "2026-11-03T07:52:58.919Z"
+  }
+},
+{
+  "model": "api.banner",
+  "pk": 3,
+  "fields": {
+    "title_main": "Ryzen 7 9800X3D",
+    "title_sub": "ซีพียูเกมมิ่งที่แรงที่สุดในโลก",
+    "tag": "NEW ARRIVAL • THE KING OF GAMING CPUS",
+    "description": "สถาปัตยกรรม Zen 5 แคช 104MB 2nd Gen 3D V-Cache ไม่ต้องรอพรีออเดอร์ มีสินค้าส่งทันที ประกันศูนย์แท้ 3 ปี",
+    "image_url": "/banners/banner_ryzen.jpg",
+    "link": "/products/10",
+    "btn_text": "สั่งซื้อ Ryzen 9800X3D",
+    "bg_gradient": "linear-gradient(135deg, #1f0808 0%, #7f1d1d 50%, #991b1b 80%, #c2410c 100%)",
+    "is_active": true,
+    "order": 3,
+    "created_at": "2026-11-03T07:52:58.922Z"
+  }
+},
+{
+  "model": "api.banner",
+  "pk": 4,
+  "fields": {
+    "title_main": "รับจัดสเปกคอม",
+    "title_sub": "ชุดน้ำเปิด-ปิด เทสเสถียร 100%",
+    "tag": "IHAVEIT CUSTOM WORKSHOP",
+    "description": "ช่างมืออาชีพระดับประกวด ประกอบเนี๊ยบ เก็บสายทุกมิติ ทดสอบ Burn-in ความร้อน 24 ชม. ส่งฟรีถึงหน้าบ้าน",
+    "image_url": "/banners/banner_custompc.jpg",
+    "link": "/products",
+    "btn_text": "ปรึกษาจัดสเปกฟรี",
+    "bg_gradient": "linear-gradient(135deg, #090c1f 0%, #1e1b4b 45%, #1d4ed8 85%, #4338ca 100%)",
+    "is_active": true,
+    "order": 4,
+    "created_at": "2026-11-03T07:52:58.926Z"
+  }
+}
+]
